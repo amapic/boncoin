@@ -26,6 +26,7 @@ const Dashboard = () => {
             <div className="input">
                 <input onChange={handleChange} type="text" name="image" placeholder="Search for images" />
             </div>
+
             <button onClick={handleSubmit} type="submit">Search</button>
             <div className="result">
                 {result.map((image) => (
