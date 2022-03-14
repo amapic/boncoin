@@ -41,11 +41,38 @@ export function Navbar(props: any) {
 
 
   return (
+    <motion.div
+      key={shortid.generate()}
+      initial="enhaut"
+      animate={controls}
+      variants={{
+        enhautPlanet: {
+          height: '80px',
+          position: 'sticky',
+          top: '0px',
+          zIndex: 7
+        },
+        enhaut: {
+          height: '40px',
+          position: 'sticky',
+          top: '0px',
+          zIndex: 7
+        },
+        pasenhaut: {
+          height: '40px',
+          position: 'sticky',
+          top: '0px',
+          zIndex: 7
+        }
+      }}
+      transition={{ type: "spring", duration: 1 }}
 
-    <nav className="">
+    >
+      <nav className="">
 
-      {props.children}
-    </nav>
+        {props.children}
+      </nav>
+    </motion.div>
 
   );
 }
@@ -64,9 +91,9 @@ export function NavItem(props: any) {
   return (
     <>
 
-      <div className="d-flex flex-row justify-content-between">
+      <div style={{ height: "60px" }} className="d-flex flex-row justify-content-between">
         <div id="bloc1" className="d-flex flex-row justify-content-center align-items-center">
-          <div className="d-flex flex-column justify-content-center">
+          <div style={{ width: "170px" }} className="d-flex flex-column justify-content-center align-items-left">
             <Image
               width={140}
               height={24}
@@ -74,13 +101,13 @@ export function NavItem(props: any) {
           </div>
           <div>
             <div style={{ height: "40px", backgroundColor: "#ff6e14" }} className="justify-content-center align-items-center border rounded d-flex flex-row p-1">
-              <div className="m-2">
-                <Image
-                  width={24}
-                  height={24}
-                  src={plus} />
-              </div>
-              <div style={{ color: "#fff", fontSize: "1.4rem" }} >
+              {/* <div className=""> */}
+              <Image
+                width={24}
+                height={24}
+                src={plus} />
+              {/* </div> */}
+              <div style={{ color: "#fff", fontSize: "14px" }} >
                 Déposer une annonce
               </div>
             </div>
@@ -88,61 +115,61 @@ export function NavItem(props: any) {
               Déposer une annonce
             </div> */}
           </div>
-          <div className="d-flex flex-row justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-row justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={loupe} />
             </div>
-            <div style={{ fontSize: "1.4rem" }} >
+            <div className="text-bold" style={{ fontSize: "14px" }} >
               Rechercher
             </div>
           </div>
         </div>
 
         <div id="bloc2" className="d-flex flex-row justify-content-center align-items-center">
-          <div className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={cloche} />
             </div>
-            <div style={{ fontSize: "1.2rem" }} className="txt_sous_img_navbar">
+            <div style={{ fontSize: "12px" }} className="txt_sous_img_navbar">
               Mes recherches
             </div>
           </div>
-          <div className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={coeur} />
             </div>
-            <div style={{ fontSize: "1.2rem" }} className="txt_sous_img_navbar">
+            <div style={{ fontSize: "12px" }} className="txt_sous_img_navbar">
               Favoris
             </div>
           </div>
-          <div className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={msg} />
             </div>
-            <div style={{ fontSize: "1.2rem" }} className="txt_sous_img_navbar">
+            <div style={{ fontSize: "12px" }} className="txt_sous_img_navbar">
               Messages
             </div>
           </div>
-          <div className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={perso} />
             </div>
-            <div style={{ fontSize: "1.2rem" }} className="txt_sous_img_navbar">
+            <div style={{ fontSize: "12px" }} className="txt_sous_img_navbar">
               Se connecter
             </div>
           </div>
