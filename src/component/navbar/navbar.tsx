@@ -12,9 +12,7 @@ import coeur from "../../img/bon_coin/coeur.svg";
 import msg from "../../img/bon_coin/msg.svg";
 import cloche from "../../img/bon_coin/cloche.svg";
 import plus from "../../img/bon_coin/plus.svg";
-// import linkedin from "../../img/linkedin.png";
 
-// import { motion } from 'framer-motion';
 import shortid from 'shortid'
 import { motion, useViewportScroll, useAnimation, useTransform } from "framer-motion";
 
@@ -23,17 +21,13 @@ export function Navbar(props: any) {
   const controls = useAnimation();
 
   useEffect(() => {
-    // console.log("rr");
     scrollY.onChange(v => {
-      // console.log("hh", v);
 
       if (v > 0) {
         controls.start("pasenhaut")
-        // console.log("pasenhaut");
       }
       if (v === 0) {
         controls.start("enhaut")
-        // console.log("enahut");
       }
     });
 
@@ -100,7 +94,7 @@ export function NavItem(props: any) {
               src={bon_coin} />
           </div>
           <div>
-            <div style={{ height: "40px", backgroundColor: "#ff6e14" }} className="justify-content-center align-items-center border rounded d-flex flex-row p-1">
+            <div style={{ height: "40px", }} className="orange justify-content-center align-items-center border rounded d-flex flex-row p-1">
               {/* <div className=""> */}
               <Image
                 width={24}
@@ -129,7 +123,7 @@ export function NavItem(props: any) {
         </div>
 
         <div id="bloc2" className="d-flex flex-row justify-content-center align-items-center">
-          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="nav-item d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
@@ -140,7 +134,7 @@ export function NavItem(props: any) {
               Mes recherches
             </div>
           </div>
-          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
+          <div className="px-10 nav-item d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
@@ -151,7 +145,7 @@ export function NavItem(props: any) {
               Favoris
             </div>
           </div>
-          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="nav-item d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
@@ -162,7 +156,7 @@ export function NavItem(props: any) {
               Messages
             </div>
           </div>
-          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-column justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="nav-item d-flex flex-column justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}

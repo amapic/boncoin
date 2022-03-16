@@ -1,4 +1,48 @@
 /* max-width constrains the width of our carousel to 550, but shrinks on small devices */
+
+.svg_categories{
+  width:20px;
+  height: 20px;
+  color:"blue";
+}
+
+.item_categories:hover > .svg_categories{
+  // filter: invert(43%) sepia(96%) saturate(1237%) hue-rotate(88deg) brightness(128%) contrast(119%);
+  filter:invert(58%) sepia(54%) saturate(4737%) hue-rotate(351deg) brightness(101%) contrast(101%);
+}
+
+// .black-green{
+  
+// }
+
+.caca {
+    // border-width:10px !important;
+    border-color:"red";
+}
+
+.pointer{
+  cursor:pointer;
+}
+
+.croix{
+  transform: rotate(45deg);
+}
+
+.item_categories{
+  width:289px;
+  height: 40px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.item_categories:hover{
+  // opacity:0.1;
+  background-color:#ffe6d7;
+  color:#ff6e14;
+}
+
+
 .img_carousel {
     // max-width: 100%;
     // max-height: 100%;
@@ -16,6 +60,9 @@
 
 .C{
   width:40%;
+  // border-right-width: 3px;
+  // border-right: #c23f34;
+  border-right: thin solid grey;
 }
 
 .C:hover{
@@ -29,6 +76,16 @@
 
 .D:hover{
   background-color: #999;
+  cursor:pointer;
+}
+
+.orange{
+  background-color:#ff6e14;
+  transition:all 0.5s;
+}
+
+.orange:hover{
+  background-color:#c23f34;
   cursor:pointer;
 }
 

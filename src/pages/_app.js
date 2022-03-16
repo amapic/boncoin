@@ -2,9 +2,11 @@
 import '../index.scss';
 import '../App.scss';
 import '../style/planet.scss';
-import '../style/navbar.scss';
+// import '../style/navbar.scss';
+import '../style/navbar2.scss';
 import '../style/bon_coin.scss';
 import 'bootstrap/dist/css/bootstrap.css'
+import '../style/custom.scss';
 import { motion } from 'framer-motion';
 import shortid from 'shortid';
 import React from 'react';
