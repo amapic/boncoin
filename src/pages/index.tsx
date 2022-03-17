@@ -190,7 +190,6 @@ export default function Dashboard() {
     <React.StrictMode>
       <div className={classes.root} >
 
-        {/* <ThemeProvider theme={theme}> */}
         <CssBaseline />
 
         <Navbar  >
@@ -201,7 +200,6 @@ export default function Dashboard() {
         <main className={classes.content}>
 
         </main>
-        {/* </ThemeProvider> */}
       </div >
     </React.StrictMode >
 

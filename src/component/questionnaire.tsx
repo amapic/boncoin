@@ -42,13 +42,26 @@ const Questionnaire = () => {
         <>
             <div style={{ width: "930px" }} className="card_perso m-auto">
 
-                <div className="d-flex flex-row">
+                {/* <div className="d-flex flex-row">
                     <div>
                         <input type="radio"></input><span style={{ fontSize: "12px" }}>Offre</span>
                     </div>
                     <div>
                         <input type="radio"></input><span style={{ fontSize: "12px" }}>Demande</span>
                     </div>
+                </div> */}
+                <div className="d-flex flex-row w-25">
+                    <label className="container d-flex flex-row">
+                        <input type="checkbox" />
+                        <span className="checkmark"></span>
+                        <span className="ps-3" style={{ fontSize: "12px" }}>Offre</span>
+                    </label>
+
+                    <label className="container d-flex flex-row align-items-center">
+                        <input type="checkbox" />
+                        <span className="checkmark"></span>
+                        <span className="ps-3" style={{ fontSize: "12px" }}>Demande</span>
+                    </label>
                 </div>
                 {/* Partie Recherche */}
                 <div style={{ height: "40px" }} className="d-flex flex-row m-2 justify-content-between align-items-center">
@@ -93,6 +106,10 @@ const Questionnaire = () => {
                         {/* {`Value is ${swt}`} */}
                     </FormCheck.Label>
                 </FormCheck>
+                <div className="custom-control custom-switch">
+                    <input type="checkbox" className="custom-control-input" id="customSwitch1" />
+                    <label className="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                </div>
                 <div id="prix" style={{ width: "6%" }} className="bg-light rounded-pill p-2 m-2 text-center">
                     <a href="#" style={{ textDecoration: "none", color: 'black' }} ref={target} onClick={handleOpen}>
                         Prix

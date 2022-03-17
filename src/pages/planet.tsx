@@ -25,6 +25,16 @@ export default function Dashboard(): JSX.Element {
               </Navbar>
             </div>
           </div>
+
+          {/* <label className="container">One
+            <input type="checkbox" checked />
+            <span className="checkmark"></span>
+          </label>
+
+          <label className="container">Four
+            <input type="checkbox" />
+            <span className="checkmark"></span>
+          </label> */}
           <div style={{ fontSize: "24px" }} className="pt-5 pb-5 w-100 m-auto text-center">
             Des millions de petites annonces et autant d’occasions de se faire plaisir
           </div>
