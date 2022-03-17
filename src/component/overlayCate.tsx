@@ -11,31 +11,26 @@ import croix from "../img/bon_coin/croix.svg";
 import Modal_window from './modal';
 import { Modal, Overlay } from "react-bootstrap";
 const OverlayCate = (props) => {
-    // const [open, setOpen] = React.useState(false);
-    // const target = useRef(null);
-    // const router = useRouter()
-    // { open, setOpen, target }
-    // console.log("ttty", props.open)
-    // if (props.open && !open) {
-    //     console.log("tttttt")
-    //     setOpen(true)
-    // }
+    const [open, setOpen] = React.useState(false);
+    const targetCategories = useRef(null);
 
-    // if (!props.open && open) {
-    //     console.log("hghgh")
-    //     setOpen(true)
-    // }
-    // const handleClose = () => {
-    //     setOpen(false)
-    // }
+    const handleClose = () => {
+        setOpen(false)
+    }
 
-    // const handleOpen = () => {
-    //     console.log(open);
-    //     setOpen(!open);
-    // }
+    const handleOpen = () => {
+        console.log(open);
+        setOpen(!open);
+    }
     return (
         <>
-            < Overlay rootClose onHide={props.handleClose} target={props.target.current} show={props.open} placement="bottom-start" >
+            <a className="" href="#" style={{ textDecoration: "none", color: 'black' }} ref={targetCategories} onClick={handleOpen}>
+                <Image
+                    width={16}
+                    height={16}
+                    src={menu} />
+            </a>
+            < Overlay rootClose onHide={handleClose} target={targetCategories} show={open} placement="bottom-start" >
                 {({ placement, arrowProps, show: _show, popper, ...props }) => (
                     <div
                         {...props}
@@ -100,37 +95,37 @@ const OverlayCate = (props) => {
                                         Divers</div>
                                     {/* One of three columns */}
                                 </div>
-                                <div className="col-8 pe-2">
+                                <div className="col-8 pe-2 border-left-3">
                                     <div className="item_categories pe-3">
                                         <img className="svg_categories mx-3" src="/img/categories/soleil.svg" />
 
                                         <span>Vacances</span>
                                     </div>
-                                    <div className="item_categories pe-3">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Locations et gîtes</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Chambres d'hôtes</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Campings</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Hébergements insolites</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Hôtels</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Ventes privées vacances</span>
                                     </div>
-                                    <div className="item_categories">
+                                    <div className="item_categories ps-3">
                                         {/* <img className="svg_categories mx-3" src="/img/categories/soleil.svg" /> */}
                                         <span>Location en Espagne</span>
                                     </div>

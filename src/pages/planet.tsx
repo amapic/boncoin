@@ -3,7 +3,7 @@ import React, { Suspense } from 'react';
 import { Navbar, NavItem } from '../component/navbar/navbar'
 import Questionnaire from '../component/questionnaire'
 import Recherches_recentes from '../component/recherches_recentes'
-import Carousel from '../component/carousel'
+import Carousel from '../component/carousel2'
 // import Total_planete../component/carouselanet/chiffre'
 import 'bootstrap/dist/css/bootstrap.css';
 // import { liste_planete_par_systeme } from '../fonction/fonction'
@@ -29,8 +29,8 @@ export default function Dashboard(): JSX.Element {
             Des millions de petites annonces et autant d’occasions de se faire plaisir
           </div>
           <Questionnaire />
-          {/* <Recherches_recentes /> */}
-          {/* <Carousel /> */}
+          <Recherches_recentes />
+          <Carousel />
           {/* Recherches récentes */}
         </div >
       </React.StrictMode >

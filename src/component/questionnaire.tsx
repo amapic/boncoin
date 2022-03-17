@@ -9,145 +9,171 @@ import fleche_bas_2 from "../img/bon_coin/fleche_bas_2.svg";
 import loupe from "../img/bon_coin/loupe.svg";
 import croix from "../img/bon_coin/croix.svg";
 import Modal_window from './modal';
-import { Modal, Overlay } from "react-bootstrap";
+import { Modal, Overlay, FormCheck } from "react-bootstrap";
 import { black } from 'material-ui/styles/colors';
 import OverlayCate from './overlayCate'
+import OverlayLoca from './overlayLoca'
 const Questionnaire = () => {
     const [open, setOpen] = React.useState(false);
-    const [openCategories, setOpenCategories] = React.useState(false);
+    const [openQuestion, setOpenQuestion] = React.useState(false);
+    const [swt, setSwt] = React.useState(true);
+
     const target = useRef(null);
-    const targetCategories = useRef(null);
-    // const router = useRouter()
+    const target_question = useRef(null);
 
     const handleClose = () => {
         setOpen(false)
     }
 
     const handleOpen = () => {
-        // console.log(open);
         setOpen(!open);
     }
 
-    const handleCloseCategories = () => {
-        setOpenCategories(false)
+    const handleCloseQuestion = () => {
+        setOpenQuestion(false)
     }
 
-    const handleOpenCategories = () => {
+    const handleOpenQuestion = () => {
         console.log(open);
-        setOpenCategories(!open);
+        setOpenQuestion(!open);
     }
+
     return (
-        <div style={{ width: "930px" }} className="card_perso">
+        <>
+            <div style={{ width: "930px" }} className="card_perso m-auto">
 
-            <div className="d-flex flex-row">
-                <div>
-                    <input type="radio"></input><span style={{ fontSize: "12px" }}>Offre</span>
-                </div>
-                <div>
-                    <input type="radio"></input><span style={{ fontSize: "12px" }}>Demande</span>
-                </div>
-            </div>
-            {/* Partie Recherche */}
-            <div style={{ height: "40px" }} className="d-flex flex-row m-2 justify-content-between align-items-center">
-                <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
-                    <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
-                        <a className="" href="#" style={{ textDecoration: "none", color: 'black' }} ref={targetCategories} onClick={handleOpenCategories}>
-                            <Image
-                                width={16}
-                                height={16}
-                                src={menu} />
-                        </a>
-                        Catégories
-                        <div>
-                            <Image
-                                width={16}
-                                height={16}
-                                src={fleche_bas_1} />
-                        </div>
+                <div className="d-flex flex-row">
+                    <div>
+                        <input type="radio"></input><span style={{ fontSize: "12px" }}>Offre</span>
                     </div>
-                    <div className="p-3"></div>
-                    <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
-                        <div className="p-3">
-                            <Image
-                                width={16}
-                                height={16}
-                                src={loupe} />
-                        </div>
-                        <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
-
-                    </div>
-                </div >
-                <div style={{ width: "2%" }}></div>
-                <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
-                    <div style={{ width: "40%" }} className="p-1 d-flex flex-row bg-light justify-content-between border rounded-pill text-center">
-                        <span className="px-1">Toute la france</span>
-
-                        {/* <Image
-                            width={16}
-                            height={16}
-                            src={croix} /> */}
-                        <img width={16} height={16} className="bg-light croix" src="/img/croix.svg" />
-                    </div>
-                    <div className='justify-content-center align-items-center'>
-                        <Image
-                            width={16}
-                            height={16}
-                            src={fleche_bas_2} />
+                    <div>
+                        <input type="radio"></input><span style={{ fontSize: "12px" }}>Demande</span>
                     </div>
                 </div>
-            </div>
-            <div id="prix" style={{ width: "6%" }} className="bg-light rounded-pill p-2 m-2 text-center">
-                <a href="#" style={{ textDecoration: "none", color: 'black' }} ref={target} onClick={handleOpen}>
-                    Prix
-                </a>
-            </div >
-            {<Overlay rootClose onHide={handleClose} target={target.current} show={open} placement="right">
-                {({ placement, arrowProps, show: _show, popper, ...props }) => (
-                    <div
-                        {...props}
-                        style={{
-                            backgroundColor: 'rgba(255, 255, 255, 1)',
-                            padding: '2px 10px',
-                            color: 'black',
+                {/* Partie Recherche */}
+                <div style={{ height: "40px" }} className="d-flex flex-row m-2 justify-content-between align-items-center">
+                    <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
+                        <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
+                            <OverlayCate />
 
-                            borderRadius: 3,
-                            ...props.style,
-
-                        }}
-                        className="w-50">
-
-                        <div className="px-4 py-3">
-                            <span className="font-weight-bold" style={{ fontSize: "16px" }}>Prix</span>
-                            <div className="my-3 d-flex flex-row w-100 justify-content-stretch align-items-stretch">
-                                <div className="d-flex flex-column justify-content-left flex-grow-1 pr-2">
-                                    <span style={{ fontSize: "14px" }} className="mb-1 font-weight-bold" >Minimum</span>
-                                    {/* <span style={{ fontSize: "14px" }}>€</span> */}
-                                    <div className="border rounded">€</div>
-                                </div>
-                                <div className="d-flex flex-column justify-content-left flex-grow-1">
-                                    <span className="mb-1 font-weight-bold">Maximum</span>
-                                    <div className="border rounded">€</div>
-                                </div>
+                            Catégories
+                            <div>
+                                <Image
+                                    width={16}
+                                    height={16}
+                                    src={fleche_bas_1} />
                             </div>
                         </div>
-                        <div className="px-4 my-3">
-                            Dons uniquement
+                        <div className="p-3"></div>
+                        <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
+                            <div className="p-3">
+                                <Image
+                                    width={16}
+                                    height={16}
+                                    src={loupe} />
+                            </div>
+                            <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
+
                         </div>
-                        <div style={{ padding: "20px 17px 20px 17px" }} className="d-flex flex-row justify-content-between">
-                            <span onClick={handleClose} >Effacer</span>
-                            <span style={{ color: "#FF6E14" }}>Valider</span>
+                    </div >
+                    <div style={{ width: "2%" }}></div>
+                    <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
+                        <OverlayLoca />
+                        <div className='justify-content-center align-items-center'>
+                            <Image
+                                width={16}
+                                height={16}
+                                src={fleche_bas_2} />
                         </div>
                     </div>
+                </div>
+                <FormCheck type="switch">
+                    <FormCheck.Input isInvalid checked={swt} />
+                    <FormCheck.Label onClick={() => setSwt(!swt)}>
+                        {/* {`Value is ${swt}`} */}
+                    </FormCheck.Label>
+                </FormCheck>
+                <div id="prix" style={{ width: "6%" }} className="bg-light rounded-pill p-2 m-2 text-center">
+                    <a href="#" style={{ textDecoration: "none", color: 'black' }} ref={target} onClick={handleOpen}>
+                        Prix
+                    </a>
+                </div >
 
-                )
-                }
-            </Overlay >}
+                {<Overlay rootClose onHide={handleClose} target={target.current} show={open} placement="right">
+                    {({ placement, arrowProps, show: _show, popper, ...props }) => (
+                        <div
+                            {...props}
+                            style={{
+                                backgroundColor: 'rgba(255, 255, 255, 1)',
+                                padding: '2px 10px',
+                                color: 'black',
 
-            <div>
-                Voir également les annonces disponibles en livraison
+                                borderRadius: 3,
+                                ...props.style,
+
+                            }}
+                            className="w-50">
+
+                            <div className="px-4 py-3">
+                                <span className="font-weight-bold" style={{ fontSize: "16px" }}>Prix</span>
+                                <div className="my-3 d-flex flex-row w-100 justify-content-stretch align-items-stretch">
+                                    <div className="d-flex flex-column justify-content-left flex-grow-1 pr-2">
+                                        <span style={{ fontSize: "14px" }} className="mb-1 font-weight-bold" >Minimum</span>
+                                        {/* <span style={{ fontSize: "14px" }}>€</span> */}
+                                        <div className="border rounded">€</div>
+                                    </div>
+                                    <div className="d-flex flex-column justify-content-left flex-grow-1">
+                                        <span className="mb-1 font-weight-bold">Maximum</span>
+                                        <div className="border rounded">€</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="px-4 my-3">
+                                Dons uniquement
+                            </div>
+                            <div style={{ padding: "20px 17px 20px 17px" }} className="d-flex flex-row justify-content-between">
+                                <span onClick={handleClose} >Effacer</span>
+                                <span style={{ color: "#FF6E14" }}>Valider</span>
+                            </div>
+                        </div>
+
+                    )
+                    }
+                </Overlay >}
+
+                <div className="position-relative">
+                    Voir également les annonces disponibles en livraison
+                    <img ref={target_question} onClick={handleOpenQuestion} width={16} height={16} className="ms-2 pointer" src="/img/question.svg" />
+                    {<Overlay rootClose onHide={handleCloseQuestion} target={target_question.current} show={openQuestion} placement="bottom">
+                        {({ placement, arrowProps, show: _show, popper, ...props }) => (
+                            <div
+                                {...props}
+                                style={{
+                                    backgroundColor: 'rgba(255, 255, 255, 1)',
+                                    // padding: '2px 10px',
+                                    color: 'black',
+
+                                    borderRadius: 3,
+                                    ...props.style,
+
+                                }}
+                                className="w-25 p-3">
+                                <h5 className='pt-3 text-justify pb-10'>leboncoin vous simplifie la vie !</h5>
+                                <span className='pb-10'>Grâce au paiement en ligne et à la livraison, vous pouvez chercher la perle rare partout en France ! Achetez en ligne et suivez la livraison de votre colis en toute sérénité avec Mondial Relay et La Poste.</span>
+                                <br />
+                                En savoir plus sur le service de paiement et de livraison leboncoin
+                                <img onClick={handleCloseQuestion} className="pointer croix_recherche" src="/img/croix-grise.svg" />
+                            </div>)}
+                    </Overlay >}
+                    {/* <div style={{ height: "40px", left: "5O%" }} className="pointer position-absolute rounded blue w-25 m-auto">
+                        <div className="m-auto h-100 text-center align-center align-middle">Rechercher (500 000 résultats)</div>
+                    </div> */}
+                </div>
             </div>
-            <OverlayCate target={targetCategories} open={openCategories} setOpen={handleOpenCategories} setClose={handleCloseCategories} />
-        </div>
+            {/* <div style={{ height: "40px", left: "5O%" }} className="text-white rounded pointer mt-5 orange w-25 m-auto">
+                <div style={{ fontSize: "14px", fontStretch: "expanded" }} className="text-white m-auto h-100 text-center align-center align-middle">Rechercher (500 000 résultats)</div>
+            </div> */}
+        </>
     )
 }
 export default Questionnaire
