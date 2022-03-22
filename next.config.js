@@ -10,6 +10,9 @@ module.exports = {
   images: {
     disableStaticImages: true
   },
+  // sassOptions: {
+  //   includePaths: [path.join(__dirname, 'styles')],
+  // },
   ...withImages()
-  
+
 }

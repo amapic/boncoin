@@ -6,8 +6,9 @@ import '../style/planet.scss';
 import '../style/navbar2.scss';
 import '../style/bon_coin.scss';
 import '../style/radio.scss';
-import 'bootstrap/dist/css/bootstrap.css'
 import '../style/custom.scss';
+import 'bootstrap/dist/css/bootstrap.css'
+
 import { motion } from 'framer-motion';
 import shortid from 'shortid';
 import React from 'react';

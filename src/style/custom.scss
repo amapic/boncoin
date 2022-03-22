@@ -1,10 +1,31 @@
-// @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// $custom-spacer:(
-//     6:$spacer*3.5,
-//     7:$spacer*4,
-//     8:$spacer*5,
-//     9:$spacer*6,
+$custom-spacer:(
+    6:$spacer*3.5,
+    7:$spacer*4,
+    8:$spacer*5,
+    9:$spacer*6,
+);
+
+$spacers:map-merge($spacers,$custom-spacer);
+
+.w-10{
+    width:10%;
+}
+
+.w-20{
+    width:20%;
+}
+
+// $theme-colors: (
+//   'primary': #145bea,
+//   'secondary': #833bec,
+//   'success': #1ce1ac,
+//   'info': #ff7d50,
+//   'warning': #ffbe0b,
+//   'danger': #ff007f,
+//   'light': #c0ccda,
+//   'dark': #001738,
 // );
 
-// $spacers:map-merge($spacers,$custom-spacer)
+// @import '/node_modules/bootstrap/scss/bootstrap.scss';

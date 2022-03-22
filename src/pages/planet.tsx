@@ -4,6 +4,9 @@ import { Navbar, NavItem } from '../component/navbar/navbar'
 import Questionnaire from '../component/questionnaire'
 import Recherches_recentes from '../component/recherches_recentes'
 import Carousel from '../component/carousel2'
+import Passion from '../component/passion'
+import Liste_Region from '../component/liste_region'
+import Footer from '../component/footer'
 // import Total_planete../component/carouselanet/chiffre'
 import 'bootstrap/dist/css/bootstrap.css';
 // import { liste_planete_par_systeme } from '../fonction/fonction'
@@ -42,7 +45,17 @@ export default function Dashboard(): JSX.Element {
           <Recherches_recentes />
           <Carousel />
           {/* Recherches récentes */}
+          <div style={{
+            width: '80%'
+          }} className="m-auto">
+            <Passion />
+          </div>
+          <div className="footer_wrapper">
+            <Liste_Region />
+            <Footer />
+          </div>
         </div >
+
       </React.StrictMode >
     </div >
   )
