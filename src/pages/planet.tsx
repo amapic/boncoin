@@ -50,7 +50,7 @@ export default function Dashboard(): JSX.Element {
           }} className="m-auto">
             <Passion />
           </div>
-          <div className="footer_wrapper">
+          <div id="footer_wrapper">
             <Liste_Region />
             <Footer />
           </div>
