@@ -50,19 +50,21 @@ const Questionnaire = () => {
                         <input type="radio"></input><span style={{ fontSize: "12px" }}>Demande</span>
                     </div>
                 </div> */}
-                <div className="d-flex flex-row w-25">
-                    <label className="container d-flex flex-row">
-                        <input type="checkbox" />
-                        <span className="checkmark"></span>
-                        <span className="ps-3" style={{ fontSize: "12px" }}>Offre</span>
-                    </label>
+                <form>
+                    <div className="d-flex flex-row w-25">
+                        <label className="container d-flex flex-row">
+                            <input name="contact" type="checkbox" />
+                            <span className="checkmark"></span>
+                            <span className="ps-3" style={{ fontSize: "12px" }}>Offre</span>
+                        </label>
 
-                    <label className="container d-flex flex-row align-items-center">
-                        <input type="checkbox" />
-                        <span className="checkmark"></span>
-                        <span className="ps-3" style={{ fontSize: "12px" }}>Demande</span>
-                    </label>
-                </div>
+                        <label className="container d-flex flex-row align-items-center">
+                            <input name="contact" type="checkbox" />
+                            <span className="checkmark"></span>
+                            <span className="ps-3" style={{ fontSize: "12px" }}>Demande</span>
+                        </label>
+                    </div>
+                </form>
                 {/* Partie Recherche */}
                 <div style={{ height: "40px" }} className="d-flex flex-row m-2 justify-content-between align-items-center">
                     <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
@@ -102,14 +104,12 @@ const Questionnaire = () => {
                 </div>
                 <FormCheck type="switch">
                     <FormCheck.Input isInvalid checked={swt} />
-                    <FormCheck.Label onClick={() => setSwt(!swt)}>
-                        {/* {`Value is ${swt}`} */}
-                    </FormCheck.Label>
+                   
                 </FormCheck>
-                <div className="custom-control custom-switch">
+                {/* <div className="custom-control custom-switch">
                     <input type="checkbox" className="custom-control-input" id="customSwitch1" />
-                    <label className="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-                </div>
+                    {/* <label className="custom-control-label" for="customSwitch1">Toggle this switch element</label> */}
+                {/* </div> */} 
                 <div id="prix" style={{ width: "6%" }} className="bg-light rounded-pill p-2 m-2 text-center">
                     <a href="#" style={{ textDecoration: "none", color: 'black' }} ref={target} onClick={handleOpen}>
                         Prix

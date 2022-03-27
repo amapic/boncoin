@@ -2,8 +2,6 @@ import React from "react";
 
 import Image from 'next/image'
 
-
-
 export default function Footer() {
 
     return (
@@ -11,14 +9,7 @@ export default function Footer() {
             <div style={{maxWidth:"1066px"}} className="d-flex m-auto corps_footer">
                 <div className="w-25 pe-3">
                     <ul className="titre_footer">A PROPOS DU BON COIN</ul>
-                    {/* <p>
-                        <span>Qui sommes-nous ?</span><br />
-                        <span>Nous rejoindre</span><br />
-                        <span>Acteur responsable de l’économie française</span><br />
-                        <span>L’Avenir a du bon</span><br />
-                        <span>Le bon observatoire</span><br />
-                    </p> */}
-                    {/* <p> */}
+
                         <ul>Qui sommes-nous ?</ul>
                         <ul>Nous rejoindre</ul>
                         <ul>Acteur responsable de l’économie française</ul>

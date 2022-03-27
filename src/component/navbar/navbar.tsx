@@ -78,14 +78,14 @@ export function NavItem(props: any) {
   const router = useRouter()
 
 
-  let hover: string = ""
-  let hover_planet: string = ""
-  hover_planet = router.pathname === '/planet' ? "nav-item noselect nav_item_selected" : "nav-item noselect"
-  hover = router.pathname === '/planet' ? "nav-item noselect" : "nav-item noselect nav_item_selected"
+  // let hover: string = ""
+  // let hover_planet: string = ""
+  // hover_planet = router.pathname === '/planet' ? "nav-item noselect nav_item_selected" : "nav-item noselect"
+  // hover = router.pathname === '/planet' ? "nav-item noselect" : "nav-item noselect nav_item_selected"
   return (
-    <>
-
-      <div style={{ height: "60px" }} className="d-flex flex-row justify-content-between">
+    // <div className="fixed-top">
+      <>
+      <div style={{maxWidth:"1066px", height: "60px" }} className="d-flex flex-row justify-content-between m-auto">
         <div id="bloc1" className="d-flex flex-row justify-content-center align-items-center">
           <div style={{ width: "170px" }} className="d-flex flex-column justify-content-center align-items-left">
             <Image
@@ -94,14 +94,14 @@ export function NavItem(props: any) {
               src={bon_coin} />
           </div>
           <div>
-            <div style={{ height: "40px", }} className="orange justify-content-center align-items-center border rounded d-flex flex-row p-1">
+            <div style={{ height: "40px", }} className="p-10 orange justify-content-center align-items-center border rounded d-flex flex-row">
               {/* <div className=""> */}
               <Image
                 width={24}
                 height={24}
                 src={plus} />
               {/* </div> */}
-              <div style={{ color: "#fff", fontSize: "14px" }} >
+              <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }} >
                 Déposer une annonce
               </div>
             </div>
@@ -109,14 +109,14 @@ export function NavItem(props: any) {
               Déposer une annonce
             </div> */}
           </div>
-          <div style={{ padding: "0 10px 0 10px" }} className="d-flex flex-row justify-content-center align-items-center">
+          <div style={{ padding: "0 10px 0 10px" }} className="h-100 d-flex flex-row justify-content-center align-items-center">
             <div className="img_navbar">
               <Image
                 width={24}
                 height={24}
                 src={loupe} />
             </div>
-            <div className="text-bold" style={{ fontSize: "14px" }} >
+            <div className="text-bold ps-2" style={{ fontSize: "14px" }} >
               Rechercher
             </div>
           </div>
@@ -170,7 +170,7 @@ export function NavItem(props: any) {
         </div>
       </div>
 
-
-    </>
+      </>
+    // </div>
   );
 }

@@ -17,18 +17,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default function Dashboard(): JSX.Element {
   return (
 
-    <div className="wrapper">
-      <React.StrictMode>
-        <div id="content" style={{ width: '100%', height: "60px" }} >
+    <div id="wrapper">
+      {/* <React.StrictMode> */}
+        {/* <div id="content" style={{ width: '100%', height: "60px" }} > */}
+        <div style={{ height: '250px'}}></div>
+        <div style={{ maxWidth: '1100px', margin: 'auto'}} className="bg-white">
           <div style={{ width: '100%', margin: 'auto', height: "60px" }} className="menu">
-            <div style={{ width: '80%', margin: 'auto', }}>
+            <div style={{ maxWidth: '1100px', margin: 'auto'}}>
               <Navbar  >
                 <NavItem  >
                 </NavItem>
               </Navbar>
             </div>
           </div>
-
+          {/* </div > */}
           {/* <label className="container">One
             <input type="checkbox" checked />
             <span className="checkmark"></span>
@@ -38,25 +40,30 @@ export default function Dashboard(): JSX.Element {
             <input type="checkbox" />
             <span className="checkmark"></span>
           </label> */}
+          {/* <div className="mx-3"> */}
           <div style={{ fontSize: "24px" }} className="pt-5 pb-5 w-100 m-auto text-center">
             Des millions de petites annonces et autant d’occasions de se faire plaisir
           </div>
           <Questionnaire />
           <Recherches_recentes />
+          <div className="my-5"></div>
           <Carousel />
           {/* Recherches récentes */}
+          <div className="my-5"></div>
           <div style={{
-            width: '80%'
+            maxWidth: '1066px'
           }} className="m-auto">
             <Passion />
           </div>
+          <div className="my-3"></div>
           <div id="footer_wrapper">
             <Liste_Region />
             <Footer />
           </div>
-        </div >
-
-      </React.StrictMode >
+        
+          {/* </div> */}
+      {/* </React.StrictMode > */}
+      </div>
     </div >
   )
 }

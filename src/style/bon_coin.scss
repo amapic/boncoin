@@ -1,5 +1,12 @@
 /* max-width constrains the width of our carousel to 550, but shrinks on small devices */
 
+
+#wrapper{
+  background-image: url('../../public/img/fond/fond.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .communaute{
   height: 200px;
   // background-image: url('/img/communaute.png')
@@ -7,7 +14,8 @@
 
 
 #footer_wrapper{
-  max-width:1086px;
+  // max-width:1066px;
+  padding-left:10px ;
   margin:auto;
   font-size:13px;
   background-Color:rgb(71,71,71);

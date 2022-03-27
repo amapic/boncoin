@@ -14,7 +14,7 @@ const Recherches_recentes = () => {
 
     return (
         <>
-            <div className="w-75 m-auto mt-5" >
+            <div style={{maxWidth: '1066px'}} className="m-auto mt-5" >
                 <div className="d-flex flex-row mb-3">
                     {/* style={{ paddingBottom: "16px" }} */}
                     <div className="d-flex flex-row mr-3">
@@ -28,7 +28,7 @@ const Recherches_recentes = () => {
                 </div>
                 <div style={{ width: "100%" }} className="d-flex flex-row justify-content-between">
                     {/* <div className="row"> */}
-                    <div className="position-relative col-4 card_perso d-flex flex-column flex-grow-1  mx-3">
+                    <div className="position-relative col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
                         <span style={{ fontSize: "18px" }} className="mb-2">Pc portable sans écran</span>
                         <span className="mb-4">Toutes catégories - 200€ et moins</span>
                         <div className="mb-2">
@@ -40,7 +40,7 @@ const Recherches_recentes = () => {
                         </div>
                         <img className="croix_recherche" src="/img/croix-grise.svg" />
                     </div>
-                    <div className="col-4 card_perso d-flex flex-column flex-grow-1  mx-3">
+                    <div className="col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
                         <span style={{ fontSize: "18px" }} className="mb-2">Pc portable sans écran</span>
                         <span className="mb-4">Toutes catégories - 200€ et moins</span>
                         <div className="mb-2">
@@ -52,7 +52,7 @@ const Recherches_recentes = () => {
                         </div>
                         <img className="croix_recherche" src="/img/croix-grise.svg" />
                     </div>
-                    <div className="col-4 card_perso d-flex flex-column flex-grow-1  mx-3">
+                    <div className="col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
                         <span style={{ fontSize: "18px" }} className="mb-2">Pc portable sans écran</span>
                         <span className="mb-4">Toutes catégories - 200€ et moins</span>
                         <div className="mb-2">

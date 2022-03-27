@@ -33,12 +33,12 @@ export default function Passion() {
 
     return (
         <div className="">
-            <h1>AAA</h1>
+            {/* <h1>AAA</h1>
             <h3>AAA</h3>
             <h4>AAA</h4>
             <h5>AAA</h5>
             <h6>AAA</h6>
-            <h2>AAA</h2>
+            <h2>AAA</h2> */}
             <div className="position-relative communaute mx-3 px-5 py-3 w-100">
                 <div className="d-flex flex-row">
                     <div style={{ width: "350px" }} className="text-left">
