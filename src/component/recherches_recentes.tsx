@@ -38,7 +38,7 @@ const Recherches_recentes = () => {
                                 src={pointer} />
                             <span className="ms-2">Toute la france</span>
                         </div>
-                        <img className="croix_recherche" src="/img/croix-grise.svg" />
+                        <img className="pointer croix_recherche" src="/img/croix-grise.svg" />
                     </div>
                     <div className="col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
                         <span style={{ fontSize: "18px" }} className="mb-2">Pc portable sans écran</span>
@@ -50,7 +50,7 @@ const Recherches_recentes = () => {
                                 src={pointer} />
                             <span className="ms-2">Toute la france</span>
                         </div>
-                        <img className="croix_recherche" src="/img/croix-grise.svg" />
+                        <img className="pointer croix_recherche" src="/img/croix-grise.svg" />
                     </div>
                     <div className="col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
                         <span style={{ fontSize: "18px" }} className="mb-2">Pc portable sans écran</span>
@@ -62,7 +62,7 @@ const Recherches_recentes = () => {
                                 src={pointer} />
                             <span className="ms-2">Toute la france</span>
                         </div>
-                        <img className="croix_recherche" src="/img/croix-grise.svg" />
+                        <img className="pointer croix_recherche" src="/img/croix-grise.svg" />
                     </div>
                     {/* </div> */}
                 </div >

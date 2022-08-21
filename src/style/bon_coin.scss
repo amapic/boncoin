@@ -1,5 +1,12 @@
 /* max-width constrains the width of our carousel to 550, but shrinks on small devices */
 
+.absolute-center{
+  
+    // position: absolute;
+    left: 37%;
+    // transform: translateX(-25%);
+
+}
 
 #wrapper{
   background-image: url('../../public/img/fond/fond.jpeg');
@@ -15,7 +22,7 @@
 
 #footer_wrapper{
   // max-width:1066px;
-  padding-left:10px ;
+  // padding-left:10px ;
   margin:auto;
   font-size:13px;
   background-Color:rgb(71,71,71);

@@ -7,7 +7,7 @@ import React from "react";
 export default function Liste_Region() {
 
     return (
-        <div className="footer_categories">
+        <div className="footer_categories ps-10">
             <div className="d-flex">
                 <div className="w-25 pe-3">
                     <span className="titre_categories">EMPLOI</span>

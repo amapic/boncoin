@@ -9,6 +9,7 @@ import Liste_Region from '../component/liste_region'
 import Footer from '../component/footer'
 // import Total_planete../component/carouselanet/chiffre'
 import 'bootstrap/dist/css/bootstrap.css';
+// import AA from '../component/aba'
 // import { liste_planete_par_systeme } from '../fonction/fonction'
 // import CountUp from 'react-countup';
 // import Login from '../Login/Login';
@@ -41,6 +42,7 @@ export default function Dashboard(): JSX.Element {
             <span className="checkmark"></span>
           </label> */}
           {/* <div className="mx-3"> */}
+          {/* <AA /> */}
           <div style={{ fontSize: "24px" }} className="pt-5 pb-5 w-100 m-auto text-center">
             Des millions de petites annonces et autant d’occasions de se faire plaisir
           </div>
