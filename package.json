@@ -70,7 +70,8 @@
     "start": "NODE_ENV=production next start",
     "rrr": "webpack",
     "test": "jest --watchAll=false --no-watchman",
-    "lint": "next lint"
+    "lint": "next lint",
+    "aa": "npm install --"
   },
   "browserslist": {
     "production": [
