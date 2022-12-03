@@ -7,6 +7,15 @@
     // transform: translateX(-25%);
 
 }
+.col_footer_wrap {
+        flex-direction: row;    
+    }
+@media (max-width: 500px) {
+    .col_footer_wrap {
+        flex-direction: column;    
+    }
+
+}
 
 #wrapper{
   background-image: url('../../public/img/fond/fond.jpeg');
