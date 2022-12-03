@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import github from "../../img/bon_coin/github.svg";
 import loupe from "../../img/bon_coin/loupe.svg";
 import bon_coin from "../../img/bon_coin/bon_coin.svg";
+import menuPrincipal from "../../img/bon_coin/Ouvrir le menu principal.svg";
 import menu from "../../img/bon_coin/menu.svg";
 import perso from "../../img/bon_coin/perso.svg";
 import coeur from "../../img/bon_coin/coeur.svg";
@@ -50,17 +51,30 @@ const LogxfoTitre = styled.div`
             <Image width={140} height={24} src={bon_coin} />
           </div> */
 }
+function MenuPrincipal() {
+  return (
+    <div
+      style={{ width: "170px" }}
+      id="logo"
+      className="d-inline-block float-left align-middle p-2"
+    >
+      <Image width={24} height={24} src={menuPrincipal} />
+    </div>
+  );
+}
+
 function LogoTitre() {
   return (
     <div
       style={{ width: "170px" }}
       id="logo"
-      className="d-xl-flex d-xxl-none flex-column justify-content-center align-items-left"
+      className="d-inline-block m-auto float-left align-middle"
     >
       <Image width={140} height={24} src={bon_coin} />
     </div>
   );
 }
+
 export function Navbar(props: any) {
   const { scrollY } = useViewportScroll();
   const controls = useAnimation();
@@ -109,20 +123,15 @@ export function Navbar(props: any) {
 }
 
 export function NavItem(props: any) {
-  const [open, setOpen] = React.useState(false);
-  const router = useRouter();
-
-  // let hover: string = ""
-  // let hover_planet: string = ""
-  // hover_planet = router.pathname === '/planet' ? "nav-item noselect nav_item_selected" : "nav-item noselect"
-  // hover = router.pathname === '/planet' ? "nav-item noselect" : "nav-item noselect nav_item_selected"
   return (
-    // <div className="fixed-top">
     <>
-      <LogoTitre />
+      <div style={{ maxWidth: "1066px", height: "60px" }} className="w-100">
+        <MenuPrincipal />
+        <LogoTitre />
+      </div>
       <div
         style={{ maxWidth: "1066px", height: "60px" }}
-        className=" d-flex flex-row justify-content-between m-auto"
+        className="d-flex flex-row justify-content-between m-auto"
       >
         <div
           id="bloc1"

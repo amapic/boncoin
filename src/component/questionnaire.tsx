@@ -14,6 +14,38 @@ import { black } from "material-ui/styles/colors";
 import OverlayCate from "./overlayCate";
 import OverlayLoca from "./overlayLoca";
 import plus from "../img/bon_coin/plus.svg";
+
+const CateEtZoneSaisie = () => {
+  return (
+    <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
+      <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
+        <OverlayCate />
+        Catégories
+        <div>
+          <Image width={16} height={16} src={fleche_bas_1} />
+        </div>
+      </div>
+      <div className="p-3"></div>
+      <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
+        <div className="p-3">
+          <Image width={16} height={16} src={loupe} />
+        </div>
+        <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
+      </div>
+    </div>
+  );
+};
+
+const Geo = () => {
+  return (
+    <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
+      <OverlayLoca />
+      <div className="justify-content-center align-items-center">
+        <Image width={16} height={16} src={fleche_bas_2} />
+      </div>
+    </div>
+  );
+};
 const Questionnaire = () => {
   const [open, setOpen] = React.useState(false);
   const [openQuestion, setOpenQuestion] = React.useState(false);
@@ -41,7 +73,8 @@ const Questionnaire = () => {
 
   return (
     <>
-      <div style={{ width: "930px" }} className="card_perso m-auto">
+      {/* style={{ width: "930px" }} */}
+      <div className="card_perso m-auto w-100">
         {/* <div className="d-flex flex-row">
                     <div>
                         <input type="radio"></input><span style={{ fontSize: "12px" }}>Offre</span>
@@ -75,27 +108,23 @@ const Questionnaire = () => {
           className="d-flex flex-row m-2 justify-content-between align-items-center"
         >
           <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
-            <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
-              <OverlayCate />
-              Catégories
-              <div>
-                <Image width={16} height={16} src={fleche_bas_1} />
-              </div>
-            </div>
-            <div className="p-3"></div>
-            <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
-              <div className="p-3">
-                <Image width={16} height={16} src={loupe} />
-              </div>
-              <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
-            </div>
+            <CateEtZoneSaisie />
           </div>
+
           <div style={{ width: "2%" }}></div>
-          <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
+
+          <Geo />
+
+          {/* <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
             <OverlayLoca />
             <div className="justify-content-center align-items-center">
               <Image width={16} height={16} src={fleche_bas_2} />
             </div>
+          </div> */}
+        </div>
+        <div className="d-flex">
+          <div className="d-md-none d-xl-none m-auto">
+            <Geo />
           </div>
         </div>
         <FormCheck type="switch">
@@ -231,9 +260,9 @@ const Questionnaire = () => {
             </Overlay>
           }
           <div className="position-relative w-100">
-            <div  className="position-absolute w-100 absolute-center">
+            <div className="position-absolute w-100 absolute-center">
               <div
-                style={{ height: "40px"}}
+                style={{ height: "40px" }}
                 className="pointer d-flex justify-content-center align-items-center position-absolute rounded blue w-25 m-auto"
               >
                 <div className="m-auto py-2 h-100 align-middle text-center text-white">
@@ -244,7 +273,7 @@ const Questionnaire = () => {
           </div>
         </div>
       </div>
-      
+
       <div
         style={{ height: "40px" }}
         className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
