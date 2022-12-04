@@ -4,8 +4,11 @@ import Image from "next/image";
 
 export default function Passion() {
   return (
-    <div style={{ backgroundColor: "#fef0e9" }} className="">
-      <div className="position-relative communaute mx-3 px-5 py-3 w-100">
+    <div className="">
+      <div
+        style={{ backgroundColor: "#fef0e9" }}
+        className="position-relative communaute mx-3 px-5 py-3 w-100"
+      >
         <div
           id="colonne_gauche_commu"
           style={{ height: "200px" }}

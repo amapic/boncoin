@@ -17,7 +17,7 @@ import plus from "../img/bon_coin/plus.svg";
 
 const CateEtZoneSaisie = () => {
   return (
-    <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
+    <div className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
       <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
         <OverlayCate />
         Catégories
@@ -46,6 +46,30 @@ const Geo = () => {
     </div>
   );
 };
+
+const boutonOrange = () => {
+  return (
+    <div
+      style={{ height: "40px", width: "200px" }}
+      className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+    >
+      {/* <div className=""> */}
+
+      {/* </div> */}
+      <div
+        className="ps-2"
+        // style={{ width: "20px" }}
+        style={{ color: "#fff", fontSize: "14px" }}
+      >
+        Déposer une annonce
+      </div>
+      <div className="ms-3">
+        <Image width={14} height={14} src={plus} />
+      </div>
+    </div>
+  );
+};
+
 const Questionnaire = () => {
   const [open, setOpen] = React.useState(false);
   const [openQuestion, setOpenQuestion] = React.useState(false);
@@ -113,7 +137,9 @@ const Questionnaire = () => {
 
           <div style={{ width: "2%" }}></div>
 
-          <Geo />
+          <div className="geo_droite">
+            <Geo />
+          </div>
 
           {/* <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
             <OverlayLoca />
@@ -265,7 +291,7 @@ const Questionnaire = () => {
                 style={{ height: "40px" }}
                 className="pointer d-flex justify-content-center align-items-center position-absolute rounded blue w-25 m-auto"
               >
-                <div className="m-auto py-2 h-100 align-middle text-center text-white">
+                <div className="m-auto py-1 h-100 align-middle text-center text-white">
                   Rechercher (500 000 résultats)
                 </div>
               </div>
@@ -275,19 +301,24 @@ const Questionnaire = () => {
       </div>
 
       <div
-        style={{ height: "40px" }}
+        style={{ height: "40px", width: "200px" }}
         className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
       >
         {/* <div className=""> */}
 
         {/* </div> */}
-        <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
+        <div
+          className="ps-2"
+          // style={{ width: "20px" }}
+          style={{ color: "#fff", fontSize: "14px" }}
+        >
           Déposer une annonce
         </div>
         <div className="ms-3">
           <Image width={14} height={14} src={plus} />
         </div>
       </div>
+      <boutonOrange />
     </>
   );
 };

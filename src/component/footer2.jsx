@@ -18,7 +18,7 @@ export function ReseauSociauxEtDate() {
   );
 }
 
-export default function Footer() {
+export default function Footer2() {
   return (
     <>
       <div id="footer" className="low_footer">

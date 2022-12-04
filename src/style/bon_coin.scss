@@ -21,6 +21,14 @@
       // display:block;
     }
 
+.geo_droite{
+  display:flex;
+}
+
+.geo_gauche{
+  display:display;
+}
+    
 @media (max-width: 840px) {
     #header_big{
       display:none;
@@ -28,6 +36,18 @@
     
     #header_small{
       display:block;
+    }
+    
+    .CateZoneSaisie{
+      width:100%;
+    }
+    
+    .geo_droite{
+      display:none;
+    }
+    
+    .geo_gauche{
+      display:flex;
     }
 
 }
@@ -41,6 +61,9 @@
       width:100%;
     }
     
+    #CateZoneSaisie{
+      width:55%;
+    }
     
     
     .low_footer {
@@ -247,7 +270,7 @@
 
 
 
-.A{
+#CateZoneSaisie{
   width:55%;
 }
 
