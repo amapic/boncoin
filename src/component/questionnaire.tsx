@@ -70,6 +70,23 @@ const boutonOrange = () => {
   );
 };
 
+const boutonBleu = () => {
+  return (
+    <div className="position-relative w-100">
+      <div className="position-absolute w-100 absolute-center">
+        <div
+          style={{ height: "40px", width: "200px" }}
+          className="pointer d-flex justify-content-center align-items-center position-absolute rounded blue w-25 m-auto"
+        >
+          <div className="m-auto py-1 h-100 align-middle text-center text-white">
+            Rechercher (500 000 résultats)
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Questionnaire = () => {
   const [open, setOpen] = React.useState(false);
   const [openQuestion, setOpenQuestion] = React.useState(false);
@@ -285,7 +302,7 @@ const Questionnaire = () => {
               )}
             </Overlay>
           }
-          <div className="position-relative w-100">
+          {/* <div className="position-relative w-100">
             <div className="position-absolute w-100 absolute-center">
               <div
                 style={{ height: "40px" }}
@@ -296,10 +313,10 @@ const Questionnaire = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-
+      <boutonBleu />
       <div
         style={{ height: "40px", width: "200px" }}
         className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
