@@ -25,7 +25,7 @@ export default function Passion() {
           </div>
           <img
             style={{ height: "200px" }}
-            className=""
+            id="img_communaute"
             src="/img/communaute.png"
           />
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export function ReseauSociauxEtDate() {
   return (
     <div className="m-2 pb-2 mb-4 text-white d-flex flex-row justify-content-between">
@@ -65,7 +64,6 @@ export default function Footer() {
           </div>
           <div className="w-25 pe-3">
             <ul className="titre_footer"> INFORMATIONS LEGALES </ul>
-            {/* <p> */}
             <ul> Conditions générales d’utilisation</ul>
             <ul>
               {" "}
@@ -76,11 +74,9 @@ export default function Footer() {
             <ul> Vos droits et obligations</ul>
             <ul> Critères de classement</ul>
             <ul> Décisions de justice</ul>
-            {/* </p> */}
           </div>
           <div className="w-25 pe-3">
             <ul className="titre_footer">NOS SOLUTIONS PROS</ul>
-            {/* <p> */}
             <ul> Vêtements</ul>
             <ul> Chaussures</ul>
             <ul> Accessoires & Bagagerie</ul>
@@ -88,7 +84,6 @@ export default function Footer() {
             <ul> Équipement bébé</ul>
             <ul> Vêtements bébé</ul>
             <ul> Luxe et Tendance</ul>
-            {/* </p> */}
           </div>
 
           <div className="w-25 pe-3">

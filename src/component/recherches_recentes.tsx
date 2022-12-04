@@ -11,18 +11,15 @@ const Recherches_recentes = () => {
     <>
       <div style={{ maxWidth: "1066px" }} className="m-auto mt-5">
         <div className="d-flex flex-row mb-3">
-          {/* style={{ paddingBottom: "16px" }} */}
           <div className="d-flex flex-row mr-3">
             <Image width={24} height={24} src={loupe} />
           </div>
-          {/* <span>Recherches récentes</span> */}
           <h4 className="ps-3">Recherches récentes</h4>
         </div>
         <div
           style={{ width: "100%" }}
           className="d-flex flex-row justify-content-between"
         >
-          {/* <div className="row"> */}
           <div className="position-relative col-3 card_perso d-flex flex-column flex-grow-1 mx-3">
             <span style={{ fontSize: "18px" }} className="mb-2">
               Pc portable sans écran

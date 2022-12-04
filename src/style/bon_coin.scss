@@ -1,20 +1,44 @@
 /* max-width constrains the width of our carousel to 550, but shrinks on small devices */
-
+//responsivity
 .absolute-center{
     left: 37%;
 }
 .col_footer_wrap {
-        flex-direction: row;    
+    flex-direction: row;    
+}
+.low_footer {
+  display:block;
+}
+    
+#header_small{
+  display:none;
+}
+#header_big{
+      display:flex;
     }
-    .low_footer {
-      display:block;
+    
+    #img_communaute{
+      // display:block;
     }
+
 @media (max-width: 500px) {
     .col_footer_wrap {
         flex-direction: column;    
     }
     
+    #header_small{
+      display:block;
+    }
+    
+    #header_big{
+      display:none;
+    }
+    
     .low_footer {
+      display:none;
+    }
+    
+    #img_communaute{
       display:none;
     }
 

@@ -24,15 +24,6 @@ import {
 
 import styled from "styled-components";
 
-// .custom-class {
-//   display: none;
-// }
-// @include media-breakpoint-up(sm) {
-//   .custom-class {
-//     display: block;
-//   }
-// }
-
 const LogxfoTitre = styled.div`
   background: transparent;
   border-radius: 3px;
@@ -42,21 +33,12 @@ const LogxfoTitre = styled.div`
   padding: 0.25em 1em;
 `;
 
-{
-  /* <div
-            style={{ width: "170px" }}
-            id="logo"
-            className="d-flex flex-column justify-content-center align-items-left"
-          >
-            <Image width={140} height={24} src={bon_coin} />
-          </div> */
-}
-function MenuPrincipal() {
+function LogoMenuPrincipal() {
   return (
     <div
-      style={{ width: "170px" }}
+      style={{}}
       id="logo"
-      className="d-inline-block float-left align-middle p-2"
+      className="d-inline-block m-auto  align-middle p-2"
     >
       <Image width={24} height={24} src={menuPrincipal} />
     </div>
@@ -66,9 +48,9 @@ function MenuPrincipal() {
 function LogoTitre() {
   return (
     <div
-      style={{ width: "170px" }}
+      style={{ width: "170px", top: "-30px" }}
       id="logo"
-      className="d-inline-block m-auto float-left align-middle"
+      className="position-relative m-auto"
     >
       <Image width={140} height={24} src={bon_coin} />
     </div>
@@ -125,13 +107,18 @@ export function Navbar(props: any) {
 export function NavItem(props: any) {
   return (
     <>
-      <div style={{ maxWidth: "1066px", height: "60px" }} className="w-100">
-        <MenuPrincipal />
+      <div
+        id="header_small"
+        style={{ maxWidth: "1066px", height: "60px" }}
+        className="w-100 position-absolute"
+      >
+        <LogoMenuPrincipal />
         <LogoTitre />
       </div>
       <div
+        id="header_big"
         style={{ maxWidth: "1066px", height: "60px" }}
-        className="d-flex flex-row justify-content-between m-auto"
+        className="flex-row justify-content-between m-auto"
       >
         <div
           id="bloc1"
@@ -221,6 +208,5 @@ export function NavItem(props: any) {
         </div>
       </div>
     </>
-    // </div>
   );
 }
