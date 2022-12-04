@@ -1,6 +1,6 @@
 import React from "react";
 
-function Region() {
+function BasFooter() {
   return (
     <div className="d-flex w-100">
       <div className="d-flex w-50 col_footer_wrap">
@@ -134,36 +134,7 @@ export default function HautFooter() {
         </div>
       </div>
       <div className="border-cate"></div>
-      <Region />
-      {/* <div className="d-flex">
-        <div className="w-25 pe-3">
-          <span className="titre_categories">OUEST</span>
-          <p>Basse-Normandie Bretagne Pays de la Loire Poitou-Charentes</p>
-          <div className="border-cate"></div>
-          <span className="titre_categories">SUD-OUEST</span>
-          <p>Aquitaine Midi-Pyrénées</p>
-        </div>
-        <div className="w-25 pe-3">
-          <span className="titre_categories">SUD-OUEST</span>
-          <p>
-            Corse Languedoc-Roussillon Provence-Alpes-Côte d'Azur Rhône-Alpes
-          </p>
-          <div className="border-cate"></div>
-          <span className="titre_categories">EST</span>
-          <p>Alsace Bourgogne Champagne-Ardenne Franche-Comté Lorraine</p>
-        </div>
-        <div className="w-25 pe-3">
-          <span className="titre_categories">NORD</span>
-          <p>Haute-Normandie Nord-Pas-de-Calais Picardie</p>
-          <div className="border-cate"></div>
-          <span className="titre_categories">CENTRE</span>
-          <p>Auvergne Centre Ile-de-France Limousin</p>
-        </div>
-        <div className="w-25 pe-3">
-          <span className="titre_categories">DROM</span>
-          <p>Guadeloupe Martinique Guyane Réunion</p>
-        </div>
-      </div> */}
+      <BasFooter />
     </div>
   );
 }

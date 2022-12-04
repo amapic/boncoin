@@ -21,18 +21,27 @@
       // display:block;
     }
 
-@media (max-width: 500px) {
-    .col_footer_wrap {
-        flex-direction: column;    
+@media (max-width: 840px) {
+    #header_big{
+      display:none;
     }
     
     #header_small{
       display:block;
     }
-    
-    #header_big{
-      display:none;
+
+}
+
+@media (max-width: 500px) {
+    .col_footer_wrap {
+        flex-direction: column;    
     }
+    
+    #colonne_gauche_commu{
+      width:100%;
+    }
+    
+    
     
     .low_footer {
       display:none;

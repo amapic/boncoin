@@ -4,10 +4,17 @@ import Image from "next/image";
 
 export default function Passion() {
   return (
-    <div className="">
+    <div style={{ backgroundColor: "#fef0e9" }} className="">
       <div className="position-relative communaute mx-3 px-5 py-3 w-100">
-        <div className="d-flex flex-row">
-          <div style={{ width: "350px" }} className="text-left">
+        <div
+          id="colonne_gauche_commu"
+          style={{ height: "200px" }}
+          className="position-absolute"
+        >
+          <div
+            style={{ top: "0px" }}
+            className="w-100 float-left text-left position-relative"
+          >
             <h5 className="text-left">Avoir une passion c'est bien</h5>
             <h5 className="text-left">
               Le partager avec les autres c'est mieux
@@ -18,15 +25,16 @@ export default function Passion() {
             </div>
             <div
               style={{ textAlign: "center" }}
-              className="orange w-100 border rounded mt-3 p-1 text-white text-center "
+              className="orange w-100 border rounded mt-3 p-1 text-white text-center"
             >
               <h6 className="m-auto">Découvrir la communauté</h6>
             </div>
           </div>
           <img
-            style={{ height: "200px" }}
+            style={{ top: "0px", right: "0px", height: "200px" }}
             id="img_communaute"
             src="/img/communaute.png"
+            className="w-50 float-right position-relative"
           />
         </div>
       </div>

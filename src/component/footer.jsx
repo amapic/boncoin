@@ -46,21 +46,9 @@ export default function Footer() {
             {/* <div className="border-cate"></div> */}
             <ul className="titre_footer">NOS APPLICATIONS</ul>
             <div>
-              <img src="img/download_on_app_store.avif" />
-              <img src="img/download_on_google_play.avif" />
+              <img className="mx-auto" src="img/download_on_app_store.avif" />
+              <img className="mx-auto" src="img/download_on_google_play.avif" />
             </div>
-            {/* <p> */}
-            {/* <ul>Voitures</ul>
-                    <ul>Motos</ul>
-                    <ul> Caravaning</ul>
-                    <ul>Utilitaires</ul>
-                    <ul> Camions</ul>
-                    <ul> Nautisme</ul>
-                    <ul>Équipement auto</ul>
-                    <ul>  Équipement moto</ul>
-                    <ul> Équipement caravaning</ul>
-                    <ul> Équipement nautisme</ul> */}
-            {/* </p> */}
           </div>
           <div className="w-25 pe-3">
             <ul className="titre_footer"> INFORMATIONS LEGALES </ul>
