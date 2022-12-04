@@ -1,13 +1,13 @@
 // import App from 'next/app'
 import "../index.scss";
 // import '../App.scss';
-import "../style/planet.scss";
+// import "../style/planet.scss";
 // import '../style/navbar.scss';
-import "../style/navbar2.scss";
+// import "../style/navbar2.scss";
 import "../style/bon_coin.scss";
-import "../style/radio.scss";
+// import "../style/radio.scss";
 // import "../style/custom.scss";
-import "../style/switch.scss";
+// import "../style/switch.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 import { motion } from "framer-motion";

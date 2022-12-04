@@ -7,18 +7,6 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
-@media (max-width: 500px) {
-    #col_footer_wrap {
-        flex-direction: row;    
-    }
-    #col_footer {
-        display: flex;
-    }
-
-    section {
-        flex: 1;   
-    }
-}
 
 .App {
   text-align: center;

@@ -41,7 +41,7 @@ function Region() {
     </div>
   );
 }
-export default function Footer() {
+export default function HautFooter() {
   return (
     <div className="footer_categories p-2 ps-10">
       <div className="d-flex w-100">

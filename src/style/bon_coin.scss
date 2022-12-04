@@ -1,18 +1,21 @@
 /* max-width constrains the width of our carousel to 550, but shrinks on small devices */
 
 .absolute-center{
-  
-    // position: absolute;
     left: 37%;
-    // transform: translateX(-25%);
-
 }
 .col_footer_wrap {
         flex-direction: row;    
     }
+    .low_footer {
+      display:block;
+    }
 @media (max-width: 500px) {
     .col_footer_wrap {
         flex-direction: column;    
+    }
+    
+    .low_footer {
+      display:none;
     }
 
 }
@@ -33,7 +36,7 @@
   // max-width:1066px;
   // padding-left:10px ;
   margin:auto;
-  font-size:13px;
+  font-size:12px;
   background-Color:rgb(71,71,71);
   
 }
@@ -52,13 +55,13 @@
   font-size: 12px;
 }
 
-.corps_footer > div > ul{
-  // color:#8191A0;
-  // padding-top: "8px";
-  margin-bottom: 8px;
-  font-size: 13px;
-  padding-inline-start: 0px;
-}
+// .corps_footer > div > ul{
+//   // color:#8191A0;
+//   // padding-top: "8px";
+//   margin-bottom: 8px;
+//   font-size: 13px;
+//   padding-inline-start: 0px;
+// }
 
 #footer{
   // background-color: rgb(71,71,71);
