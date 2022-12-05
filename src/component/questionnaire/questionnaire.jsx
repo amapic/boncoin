@@ -68,20 +68,22 @@ const BarreDefilement = () => {};
 
 const CateEtZoneSaisie = () => {
   return (
-    <div className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
-      <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
-        <OverlayCate />
-        Catégories
-        <div>
-          <Image width={16} height={16} src={fleche_bas_1} />
+    <div className="A CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
+      <div className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
+        <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
+          <OverlayCate />
+          Catégories
+          <div>
+            <Image width={16} height={16} src={fleche_bas_1} />
+          </div>
         </div>
-      </div>
-      <div className="p-3"></div>
-      <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
-        <div className="p-3">
-          <Image width={16} height={16} src={loupe} />
+        <div className="p-3"></div>
+        <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
+          <div className="p-3">
+            <Image width={16} height={16} src={loupe} />
+          </div>
+          <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
         </div>
-        <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
       </div>
     </div>
   );
@@ -89,7 +91,7 @@ const CateEtZoneSaisie = () => {
 
 const Geo = () => {
   return (
-    <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
+    <div className="B d-flex flex-row px-1 h-100 rounded bg-light justify-content-between align-items-center">
       <OverlayLoca />
       <div className="justify-content-center align-items-center">
         <Image width={16} height={16} src={fleche_bas_2} />
@@ -102,7 +104,7 @@ function BoutonOrange() {
   return (
     <div
       style={{ height: "40px", width: "200px" }}
-      className="d-flex d-sm-none d-md-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+      className="d-none d-sm-block  w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
     >
       <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
         Déposer une annonce
@@ -118,31 +120,10 @@ function BoutonBleu() {
   return (
     <div
       style={{ height: "40px", width: "200px" }}
-      className="d-flex d-sm-none d-md-none w-20 m-auto mt-5 px-3 bleu justify-content-between align-items-center border rounded d-flex flex-row"
+      className="d-none d-sm-block w-20 m-auto mt-5 px-3 bleu justify-content-between align-items-center border rounded d-flex flex-row"
     >
       <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
         Déposer une annonce
-      </div>
-      {/* <div className="ms-3">
-        <Image width={14} height={14} src={plus} />
-      </div> */}
-    </div>
-  );
-}
-
-function BoutonBleusfgs() {
-  return (
-    <div style={{ height: "40px", width: "200px" }}
-       className="position-relative w-20">
-      <div className="position-absolute w-100 absolute-center">
-        <div
-          style={{ height: "40px", width: "200px" }}
-          className="pointer d-flex justify-content-center align-items-center position-absolute rounded blue w-25 m-auto"
-        >
-          <div className="m-auto py-1 h-100 align-middle text-center text-white">
-            Rechercher (500 000 résultats)
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -178,14 +159,6 @@ const Questionnaire = () => {
       {/* style={{ width: "930px" }} */}
       <Hh />
       <div className="card_perso m-auto w-100">
-        {/* <div className="d-flex flex-row">
-                    <div>
-                        <input type="radio"></input><span style={{ fontSize: "12px" }}>Offre</span>
-                    </div>
-                    <div>
-                        <input type="radio"></input><span style={{ fontSize: "12px" }}>Demande</span>
-                    </div>
-                </div> */}
         <form>
           <div className="d-flex flex-row w-25">
             <label className="container d-flex flex-row">
@@ -210,22 +183,13 @@ const Questionnaire = () => {
           style={{ height: "40px" }}
           className="d-flex flex-row m-2 justify-content-between align-items-center"
         >
-          <div className="A d-flex flex-row h-100 rounded bg-light mr-2">
-            <CateEtZoneSaisie />
-          </div>
+          <CateEtZoneSaisie />
 
           <div style={{ width: "2%" }}></div>
 
           <div className="geo_droite">
             <Geo />
           </div>
-
-          {/* <div className="B d-flex flex-row px-3 h-100 rounded bg-light justify-content-between align-items-center">
-            <OverlayLoca />
-            <div className="justify-content-center align-items-center">
-              <Image width={16} height={16} src={fleche_bas_2} />
-            </div>
-          </div> */}
         </div>
         <div className="d-flex">
           <div className="d-md-none d-xl-none m-auto">
@@ -235,10 +199,7 @@ const Questionnaire = () => {
         <FormCheck type="switch">
           <FormCheck.Input isInvalid checked={swt} />
         </FormCheck>
-        {/* <div className="custom-control custom-switch">
-                    <input type="checkbox" className="custom-control-input" id="customSwitch1" />
-                    {/* <label className="custom-control-label" for="customSwitch1">Toggle this switch element</label> */}
-        {/* </div> */}
+
         <div
           id="prix"
           style={{ width: "6%" }}

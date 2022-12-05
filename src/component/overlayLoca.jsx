@@ -28,9 +28,10 @@ const OverlayLoca = (props) => {
       {/* <span onClick={handleOpen} ref={target} className="pointer px-1">Toute la france</span> */}
       <div
         style={{ width: "40%" }}
+        style={{ width: "365px", heigth: "40px" }}
         className="pointer p-1 d-flex flex-row bg-light justify-content-between border rounded-pill text-center"
       >
-        <span onClick={handleOpen} ref={target} className=" px-1">
+        <span onClick={handleOpen} ref={target} className="px-1">
           Toute la france
         </span>
 

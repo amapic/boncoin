@@ -25,7 +25,6 @@ export default function Dashboard(): JSX.Element {
             </Navbar>
           </div>
         </div>
-
         <div
           style={{ fontSize: "24px" }}
           className="pt-5 pb-5 w-100 m-auto text-center"
@@ -42,14 +41,28 @@ export default function Dashboard(): JSX.Element {
         <div
           style={{
             maxWidth: "1066px",
-            height: "300px",
+            height: "200px",
           }}
           className="m-auto"
         >
           <Passion />
         </div>
-        <div className="my-3"></div>
-        <div id="footer_wrapper">
+        <div
+          style={{ fontSize: "12px", width: "fit-content" }}
+          className="text-center m-3 px-5 py-3 "
+        >
+          Avec leboncoin, trouvez la bonne affaire sur le site référent de
+          petites annonces de particulier à particulier et de professionnels.
+          Avec des millions de petites annonces, trouvez la bonne occasion dans
+          nos catégories voiture, immobilier, emploi, location de vacances,
+          vêtements, meubles, bricolage, téléphonie, jeux vidéo, etc… Déposez
+          une annonce gratuite en toute simplicité pour vendre, rechercher,
+          donner vos biens de seconde main ou promouvoir vos services. Achetez
+          en toute sécurité avec notre système de paiement en ligne et de
+          livraison pour les annonces éligibles.
+        </div>
+        );
+        <div id="footer_wrapper my-5">
           <Liste_Region />
           <Footer />
         </div>

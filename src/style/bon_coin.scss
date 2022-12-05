@@ -28,7 +28,19 @@
 .geo_gauche{
   display:display;
 }
-    
+#colonne_gauche_commu{
+      width:50%;
+    }
+@media (max-width: 840px) {
+    #img_communaute{
+      display:none;
+    }
+    #colonne_gauche_commu{
+      width:100%;
+      margin:auto;
+    }
+  
+}   
 @media (max-width: 840px) {
     #header_big{
       display:none;
@@ -70,9 +82,7 @@
       display:none;
     }
     
-    #img_communaute{
-      display:none;
-    }
+    
 
 }
 
@@ -86,7 +96,6 @@
 #footer_wrapper{
   // max-width:1066px;
   // padding-left:10px ;
-  margin:auto;
   font-size:12px;
   background-Color:rgb(71,71,71);
   

@@ -2,7 +2,7 @@ import React from "react";
 
 function BasFooter() {
   return (
-    <div className="d-flex w-100">
+    <div className="d-flex w-100 bt-5">
       <div className="d-flex w-50 col_footer_wrap">
         <div className="pe-3 col_footer">
           <div>
