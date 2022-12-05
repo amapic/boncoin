@@ -60,7 +60,8 @@
     "ts-debounce": "^4.0.0",
     "typescript": "^4.3.5",
     "underscore": "^1.13.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "styled-components-breakpoint": "*"
   },
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",

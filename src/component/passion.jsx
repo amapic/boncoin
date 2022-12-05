@@ -1,22 +1,20 @@
 import React from "react";
 
-import Image from "next/image";
-
 export default function Passion() {
   return (
-    <div className="">
+    <>
       <div
-        style={{ backgroundColor: "#fef0e9" }}
-        className="position-relative communaute mx-3 px-5 py-3 w-100"
+        style={{ backgroundColor: "#fef0e9", height: "200px" }}
+        className="position-absolute mx-3 px-5 py-3 w-100 my-5"
       >
         <div
           id="colonne_gauche_commu"
           style={{ height: "200px" }}
-          className="position-absolute"
+          className="position-relative"
         >
           <div
             style={{ top: "0px" }}
-            className="w-100 float-left text-left position-relative"
+            className="w-50 d-inline-block float-left text-left position-relative"
           >
             <h5 className="text-left">Avoir une passion c'est bien</h5>
             <h5 className="text-left">
@@ -34,10 +32,10 @@ export default function Passion() {
             </div>
           </div>
           <img
-            style={{ top: "0px", right: "0px", height: "200px" }}
+            style={{ bottom: "0px", right: "0px" }}
             id="img_communaute"
             src="/img/communaute.png"
-            className="w-50 float-right position-relative"
+            className="w-50 d-inline-block float-right position-relative"
           />
         </div>
       </div>
@@ -52,6 +50,6 @@ export default function Passion() {
         avec notre système de paiement en ligne et de livraison pour les
         annonces éligibles.
       </div>
-    </div>
+    </>
   );
 }

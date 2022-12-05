@@ -14,12 +14,12 @@
   display:none;
 }
 #header_big{
-      display:flex;
-    }
-    
-    #img_communaute{
-      // display:block;
-    }
+  display:flex;
+}
+
+#img_communaute{
+  // display:block;
+}
 
 .geo_droite{
   display:flex;
@@ -80,11 +80,6 @@
   background-image: url('../../public/img/fond/fond.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.communaute{
-  height: 200px;
-  // background-image: url('/img/communaute.png')
 }
 
 

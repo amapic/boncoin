@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, NavItem } from "../component/navbar/navbar";
-import Questionnaire from "../component/questionnaire";
+import Questionnaire from "../component/questionnaire/questionnaire";
 import Recherches_recentes from "../component/recherches_recentes";
 import Carousel from "../component/carousel2";
 import Passion from "../component/passion";

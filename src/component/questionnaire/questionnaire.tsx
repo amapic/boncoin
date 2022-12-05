@@ -1,19 +1,19 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import Router, { useRouter } from "next/router";
+
 import "bootstrap/dist/css/bootstrap.css";
-// import menu from "../img/bon_coin/menu.svg";
-import menu from "../img/bon_coin/menu.svg";
-import fleche_bas_1 from "../img/bon_coin/fleche_bas_1.svg";
-import fleche_bas_2 from "../img/bon_coin/fleche_bas_2.svg";
-import loupe from "../img/bon_coin/loupe.svg";
-import croix from "../img/bon_coin/croix.svg";
-import Modal_window from "./modal";
+
+import fleche_bas_1 from "../../img/bon_coin/fleche_bas_1.svg";
+import fleche_bas_2 from "../../img/bon_coin/fleche_bas_2.svg";
+import loupe from "../../img/bon_coin/loupe.svg";
+
 import { Modal, Overlay, FormCheck } from "react-bootstrap";
 import { black } from "material-ui/styles/colors";
-import OverlayCate from "./overlayCate";
-import OverlayLoca from "./overlayLoca";
-import plus from "../img/bon_coin/plus.svg";
+import OverlayCate from "./../overlayCate";
+import OverlayLoca from "./../overlayLoca";
+import plus from "../../img/bon_coin/plus.svg";
+
+import Hh from "./boutonOrange"
 
 const CateEtZoneSaisie = () => {
   return (
@@ -47,20 +47,13 @@ const Geo = () => {
   );
 };
 
-const boutonOrange = () => {
+function boutonOrange() {
   return (
     <div
       style={{ height: "40px", width: "200px" }}
-      className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+      className="d-sm-none d-md-none d-xl-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
     >
-      {/* <div className=""> */}
-
-      {/* </div> */}
-      <div
-        className="ps-2"
-        // style={{ width: "20px" }}
-        style={{ color: "#fff", fontSize: "14px" }}
-      >
+      <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
         Déposer une annonce
       </div>
       <div className="ms-3">
@@ -68,9 +61,9 @@ const boutonOrange = () => {
       </div>
     </div>
   );
-};
+}
 
-const boutonBleu = () => {
+function boutonBleu() {
   return (
     <div className="position-relative w-100">
       <div className="position-absolute w-100 absolute-center">
@@ -85,7 +78,7 @@ const boutonBleu = () => {
       </div>
     </div>
   );
-};
+}
 
 const Questionnaire = () => {
   const [open, setOpen] = React.useState(false);
@@ -115,6 +108,7 @@ const Questionnaire = () => {
   return (
     <>
       {/* style={{ width: "930px" }} */}
+      <Hh />
       <div className="card_perso m-auto w-100">
         {/* <div className="d-flex flex-row">
                     <div>
@@ -319,7 +313,7 @@ const Questionnaire = () => {
       <boutonBleu />
       <div
         style={{ height: "40px", width: "200px" }}
-        className="w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+        className="d-sm-none d-md-none d-xl-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
       >
         {/* <div className=""> */}
 
