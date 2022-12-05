@@ -4,38 +4,46 @@ export default function Passion() {
   return (
     <>
       <div
-        style={{ backgroundColor: "#fef0e9", height: "200px" }}
-        className="position-absolute mx-3 px-5 py-3 w-100 my-5"
+        style={{ height: "200px", maxWidth: "1100px" }}
+        className="mx-3 px-5 py-3 w-100 my-5"
       >
         <div
-          id="colonne_gauche_commu"
-          style={{ height: "200px" }}
-          className="position-relative"
+          style={{
+            backgroundColor: "#fef0e9",
+            height: "200px",
+          }}
+          className="position-absolute p-2"
         >
           <div
-            style={{ top: "0px" }}
-            className="w-50 d-inline-block float-left text-left position-relative"
+            id="colonne_gauche_commu"
+            style={{ height: "200px", maxWidth: "1100px" }}
+            className="position-relative"
           >
-            <h5 className="text-left">Avoir une passion c'est bien</h5>
-            <h5 className="text-left">
-              Le partager avec les autres c'est mieux
-            </h5>
-            <div>
-              Jardinage, mode, vélo... , ils sont nombreux à en parler sur la
-              Communauté leboncoin ! Rejoignez-les !
-            </div>
             <div
-              style={{ textAlign: "center" }}
-              className="orange w-100 border rounded mt-3 p-1 text-white text-center"
+              style={{ top: "0px" }}
+              className="w-50  float-left text-left position-relative"
             >
-              <h6 className="m-auto">Découvrir la communauté</h6>
+              <h5 className="text-left">Avoir une passion c'est bien</h5>
+              <h5 className="text-left">
+                Le partager avec les autres c'est mieux
+              </h5>
+              <div>
+                Jardinage, mode, vélo... , ils sont nombreux à en parler sur la
+                Communauté leboncoin ! Rejoignez-les !
+              </div>
+              <div
+                style={{ textAlign: "center" }}
+                className="orange w-100 border rounded mt-3 p-1 text-white text-center"
+              >
+                <h6 className="m-auto">Découvrir la communauté</h6>
+              </div>
             </div>
           </div>
           <img
             style={{ bottom: "0px", right: "0px" }}
             id="img_communaute"
             src="/img/communaute.png"
-            className="w-50 d-inline-block float-right position-relative"
+            className="w-50 float-right position-relative"
           />
         </div>
       </div>

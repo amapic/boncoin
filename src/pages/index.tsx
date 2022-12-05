@@ -42,6 +42,7 @@ export default function Dashboard(): JSX.Element {
         <div
           style={{
             maxWidth: "1066px",
+            height: "300px",
           }}
           className="m-auto"
         >

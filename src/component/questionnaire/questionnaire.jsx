@@ -8,12 +8,63 @@ import fleche_bas_2 from "../../img/bon_coin/fleche_bas_2.svg";
 import loupe from "../../img/bon_coin/loupe.svg";
 
 import { Modal, Overlay, FormCheck } from "react-bootstrap";
-import { black } from "material-ui/styles/colors";
+
 import OverlayCate from "./../overlayCate";
 import OverlayLoca from "./../overlayLoca";
 import plus from "../../img/bon_coin/plus.svg";
 
-import Hh from "./boutonOrange"
+import Hh from "./boutonOrange";
+
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+
+// function LeftArrow() {
+//   const { isFirstItemVisible, scrollPrev } =
+//     React.useContext(VisibilityContext);
+
+//   return (
+//     <Arrow disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+//       Left
+//     </Arrow>
+//   );
+// }
+
+// function RightArrow() {
+//   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
+
+//   return (
+//     <Arrow disabled={isLastItemVisible} onClick={() => scrollNext()}>
+//       Right
+//     </Arrow>
+//   );
+// }
+
+// function App() {
+//   // const [items, setItems] = React.useState(getItems);
+//   const [selected, setSelected] = React.useState([]);
+//   const [position, setPosition] = React.useState(0);
+
+//   // const isItemSelected = (id) => !!selected.find((el) => el === id);
+
+//   const handleClick =
+//     (id) =>
+//     ({ getItemById, scrollToItem }) => {
+//       const itemSelected = isItemSelected(id);
+
+//       setSelected((currentSelected) =>
+//         itemSelected
+//           ? currentSelected.filter((el) => el !== id)
+//           : currentSelected.concat(id)
+//       );
+//     };
+
+//   return (
+//     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+//       <Questionnaire />
+//     </ScrollMenu>
+//   );
+// }
+
+const BarreDefilement = () => {};
 
 const CateEtZoneSaisie = () => {
   return (
@@ -47,11 +98,11 @@ const Geo = () => {
   );
 };
 
-function boutonOrange() {
+function BoutonOrange() {
   return (
     <div
       style={{ height: "40px", width: "200px" }}
-      className="d-sm-none d-md-none d-xl-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+      className="d-flex d-sm-none d-md-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
     >
       <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
         Déposer une annonce
@@ -63,9 +114,26 @@ function boutonOrange() {
   );
 }
 
-function boutonBleu() {
+function BoutonBleu() {
   return (
-    <div className="position-relative w-100">
+    <div
+      style={{ height: "40px", width: "200px" }}
+      className="d-flex d-sm-none d-md-none w-20 m-auto mt-5 px-3 bleu justify-content-between align-items-center border rounded d-flex flex-row"
+    >
+      <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
+        Déposer une annonce
+      </div>
+      {/* <div className="ms-3">
+        <Image width={14} height={14} src={plus} />
+      </div> */}
+    </div>
+  );
+}
+
+function BoutonBleusfgs() {
+  return (
+    <div style={{ height: "40px", width: "200px" }}
+       className="position-relative w-20">
       <div className="position-absolute w-100 absolute-center">
         <div
           style={{ height: "40px", width: "200px" }}
@@ -310,17 +378,14 @@ const Questionnaire = () => {
           </div> */}
         </div>
       </div>
-      <boutonBleu />
-      <div
+      <BoutonBleu />
+      {/* <div
         style={{ height: "40px", width: "200px" }}
         className="d-sm-none d-md-none d-xl-none w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
       >
-        {/* <div className=""> */}
 
-        {/* </div> */}
         <div
           className="ps-2"
-          // style={{ width: "20px" }}
           style={{ color: "#fff", fontSize: "14px" }}
         >
           Déposer une annonce
@@ -328,8 +393,8 @@ const Questionnaire = () => {
         <div className="ms-3">
           <Image width={14} height={14} src={plus} />
         </div>
-      </div>
-      <boutonOrange />
+      </div> */}
+      <BoutonOrange />
     </>
   );
 };

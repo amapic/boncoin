@@ -61,7 +61,8 @@
     "typescript": "^4.3.5",
     "underscore": "^1.13.1",
     "web-vitals": "^1.1.2",
-    "styled-components-breakpoint": "*"
+    "styled-components-breakpoint": "*",
+    "react-horizontal-scrolling-menu": "*"
   },
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
@@ -71,8 +72,7 @@
     "start": "NODE_ENV=production next start",
     "rrr": "webpack",
     "test": "jest --watchAll=false --no-watchman",
-    "lint": "next lint",
-    "aa": "npm install --"
+    "lint": "next lint"
   },
   "browserslist": {
     "production": [
