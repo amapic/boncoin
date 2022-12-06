@@ -10,7 +10,7 @@ import loupe from "../../img/bon_coin/loupe.svg";
 import { Modal, Overlay, FormCheck } from "react-bootstrap";
 
 import OverlayCate from "./../overlayCate";
-import OverlayLoca from "./../overlayLoca";
+import Geo from "./recherche_geo";
 import plus from "../../img/bon_coin/plus.svg";
 
 import Hh from "./boutonOrange";
@@ -68,48 +68,65 @@ const BarreDefilement = () => {};
 
 const CateEtZoneSaisie = () => {
   return (
-    <div className="A CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
+    <div
+      // style={{ width: "195px" }}
+      className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2"
+    >
       <div className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
-        <div className="C px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center">
+        <div
+          style={{ width: "195px" }}
+          className="text-truncate px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center"
+        >
           <OverlayCate />
           Catégories
-          <div>
-            <Image width={16} height={16} src={fleche_bas_1} />
+          <div className="flex-shrink-0">
+            <Image
+              className="flex-shrink-0"
+              width={16}
+              height={16}
+              src={fleche_bas_1}
+            />
           </div>
         </div>
-        <div className="p-3"></div>
-        <div className="D d-flex flex-row border-left me-2 justify-content-left align-items-center">
-          <div className="p-3">
-            <Image width={16} height={16} src={loupe} />
+        <div className="pe-1"></div>
+        <div
+          style={{ width: "195px" }}
+          className="D d-flex flex-row border-left me-2 justify-content-left align-items-center"
+        >
+          <div className="p-1 flex-shrink-0">
+            <Image
+              className="flex-shrink-0"
+              width={16}
+              height={16}
+              src={loupe}
+            />
           </div>
-          <div className="ms-3 text-secondary">Que recherchez-vous ?</div>
+          <div className="ms-3 text-secondary text-truncate">
+            Que recherchez-vous ?
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-const Geo = () => {
-  return (
-    <div className="B d-flex flex-row px-1 h-100 rounded bg-light justify-content-between align-items-center">
-      <OverlayLoca />
-      <div className="justify-content-center align-items-center">
-        <Image width={16} height={16} src={fleche_bas_2} />
-      </div>
-    </div>
-  );
-};
+// .B{
+//   width:45%;
+// }
 
 function BoutonOrange() {
   return (
     <div
       style={{ height: "40px", width: "200px" }}
-      className="d-none d-sm-block  w-20 m-auto mt-5 px-3 orange justify-content-between align-items-center border rounded d-flex flex-row"
+      className="d-none d-sm-flex  w-20 m-auto mt-5 orange justify-content-between align-items-center border rounded d-flex flex-row"
     >
-      <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
+      <div
+        className="ps-2 w-30 lh-2"
+        style={{ color: "#fff", fontSize: "14px" }}
+      >
         Déposer une annonce
       </div>
-      <div className="ms-3">
+      <div className="me-3 ms-2">
         <Image width={14} height={14} src={plus} />
       </div>
     </div>
@@ -122,7 +139,7 @@ function BoutonBleu() {
       style={{ height: "40px", width: "200px" }}
       className="d-none d-sm-block w-20 m-auto mt-5 px-3 bleu justify-content-between align-items-center border rounded d-flex flex-row"
     >
-      <div className="ps-2" style={{ color: "#fff", fontSize: "14px" }}>
+      <div className="w-100 ps-2" style={{ color: "#fff", fontSize: "14px" }}>
         Déposer une annonce
       </div>
     </div>
@@ -183,13 +200,14 @@ const Questionnaire = () => {
           style={{ height: "40px" }}
           className="d-flex flex-row m-2 justify-content-between align-items-center"
         >
+          <Geo />
           <CateEtZoneSaisie />
 
           <div style={{ width: "2%" }}></div>
 
-          <div className="geo_droite">
-            <Geo />
-          </div>
+          {/* <div style={{ height: "40px" }} className="geo_droite"> */}
+          <Geo />
+          {/* </div> */}
         </div>
         <div className="d-flex">
           <div className="d-md-none d-xl-none m-auto">

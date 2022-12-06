@@ -9,6 +9,19 @@
 .low_footer {
   display:block;
 }
+
+.card_perso {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.13);
+  // transition: all 0.4s ease;
+  // display:flex;
+  // flex-direction: column;
+  
+  padding: 20px;
+  
+}
     
 #header_small{
   display:none;
@@ -22,7 +35,7 @@
 }
 
 .geo_droite{
-  display:flex;
+  // display:flex;
 }
 
 .geo_gauche{
@@ -278,12 +291,10 @@
   width:55%;
 }
 
-.B{
-  width:45%;
-}
+
 
 .C{
-  width:40%;
+  // width:40%;
   // border-right-width: 3px;
   // border-right: #c23f34;
   border-right: thin solid grey;

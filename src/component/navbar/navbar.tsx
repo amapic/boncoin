@@ -7,7 +7,6 @@ import github from "../../img/bon_coin/github.svg";
 import loupe from "../../img/bon_coin/loupe.svg";
 import bon_coin from "../../img/bon_coin/bon_coin.svg";
 import menuPrincipal from "../../img/bon_coin/Ouvrir le menu principal.svg";
-import menu from "../../img/bon_coin/menu.svg";
 import perso from "../../img/bon_coin/perso.svg";
 import coeur from "../../img/bon_coin/coeur.svg";
 import msg from "../../img/bon_coin/msg.svg";
