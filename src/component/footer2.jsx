@@ -24,7 +24,7 @@ export default function Footer2() {
       <div id="footer" className="low_footer">
         <div
           style={{ maxWidth: "1066px" }}
-          className="d-flex m-auto corps_footer"
+          className="d-flex m-auto corps_footer text-dark"
         >
           <div className="w-25 pe-3">
             <ul className="titre_footer">A PROPOS DU BON COIN</ul>

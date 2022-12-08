@@ -4,11 +4,11 @@ import Router, { useRouter } from "next/router";
 import "bootstrap/dist/css/bootstrap.css";
 // import menu from "../img/bon_coin/menu.svg";
 import menu from "../img/bon_coin/menu.svg";
-import fleche_bas_1 from "../img/bon_coin/fleche_bas_1.svg";
-import fleche_bas_2 from "../img/bon_coin/fleche_bas_2.svg";
-import loupe from "../img/bon_coin/loupe.svg";
-import croix from "../img/bon_coin/croix.svg";
-import Modal_window from "./modal";
+// import fleche_bas_1 from "../img/bon_coin/fleche_bas_1.svg";
+// import fleche_bas_2 from "../img/bon_coin/fleche_bas_2.svg";
+// import loupe from "../img/bon_coin/loupe.svg";
+// import croix from "../img/bon_coin/croix.svg";
+// import Modal_window from "./modal";
 import { Modal, Overlay } from "react-bootstrap";
 const OverlayCate = (props) => {
   const [open, setOpen] = React.useState(false);

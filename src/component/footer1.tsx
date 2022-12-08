@@ -1,44 +1,87 @@
 import React from "react";
 
+function Div_Col_footer({ children }) {
+  return <div className="w-50 pe-3">{children}</div>;
+}
+
 function BasFooter() {
   return (
     <div className="d-flex w-100 bt-5">
       <div className="d-flex w-50 col_footer_wrap">
-        <div className="pe-3 col_footer">
+        <Div_Col_footer>
           <div>
             <span className="titre_categories">OUEST</span>
-            <p>Basse-Normandie Bretagne Pays de la Loire Poitou-Charentes</p>
+            Basse-Normandie <br />
+            Bretagne <br />
+            Pays de la Loire <br />
+            Poitou-Charentes <br />
             <div className="border-cate"></div>
             <span className="titre_categories">SUD-OUEST</span>
-            <p>Aquitaine Midi-Pyrénées</p>
+            Aquitaine Midi-Pyrénées <br />
           </div>
-          <div className="pe-3 col_footer">
-            <span className="titre_categories">SUD-OUEST</span>
-            <p>
-              Corse Languedoc-Roussillon Provence-Alpes-Côte d'Azur Rhône-Alpes
-            </p>
-            <div className="border-cate"></div>
-            <span className="titre_categories">EST</span>
-            <p>Alsace Bourgogne Champagne-Ardenne Franche-Comté Lorraine</p>
-          </div>
-        </div>
+        </Div_Col_footer>
+        <Div_Col_footer>
+          <span className="titre_categories">SUD-EST</span>
+          Corse
+          <br />
+          Languedoc-Roussillon
+          <br />
+          Provence-Alpes-Côte d'Azur
+          <br />
+          Rhône-Alpes
+          <br />
+          <div className="border-cate"></div>
+          <span className="titre_categories">EST</span>
+          Alsace
+          <br />
+          Bourgogne
+          <br />
+          Champagne-Ardenne <br />
+          Franche-Comté <br />
+          Lorraine
+          <br />
+        </Div_Col_footer>
       </div>
+      {/* </div> */}
+      {/* // </div> */}
       <div className="d-flex w-50 col_footer_wrap">
-        <div>
-          <div className="pe-3 col_footer">
+        {/* <div> */}
+        <div className="pe-3 col_footer">
+          <Div_Col_footer>
             <span className="titre_categories">NORD</span>
-            <p>Haute-Normandie Nord-Pas-de-Calais Picardie</p>
+            Haute-Normandie
+            <br />
+            Nord-Pas-de-Calais
+            <br />
+            Picardie
+            <br />
             <div className="border-cate"></div>
             <span className="titre_categories">CENTRE</span>
-            <p>Auvergne Centre Ile-de-France Limousin</p>
-          </div>
-          <div className="pe-3 col_footer">
-            <span className="titre_categories">DROM</span>
-            <p>Guadeloupe Martinique Guyane Réunion</p>
-          </div>
+            Auvergne
+            <br />
+            Centre Ile-de-France
+            <br />
+            Limousin
+            <br />
+          </Div_Col_footer>
+          {/* </div> */}
+          <Div_Col_footer>
+            <div className="pe-3 col_footer">
+              <span className="titre_categories">DROM</span>
+              Guadeloupe
+              <br />
+              Martinique
+              <br />
+              Guyane
+              <br />
+              Réunion
+              <br />
+            </div>
+          </Div_Col_footer>
         </div>
       </div>
     </div>
+    // </div>
   );
 }
 export default function HautFooter() {
@@ -46,59 +89,97 @@ export default function HautFooter() {
     <div className="footer_categories p-2 ps-10">
       <div className="d-flex w-100">
         <div className="d-flex w-50 col_footer_wrap">
-          <div className="pe-3 col_footer">
+          {/* <div className="pe-3"> */}
+          <Div_Col_footer>
             {/* <div className="w-25 pe-3 col_footer"> */}
             <div>
               <span className="titre_categories">EMPLOI</span>
               <p>
-                Offres d'emploi Offres d'emploi Cadres Formations
+                Offres d'emploi
+                <br />
+                Offres d'emploi Cadres
+                <br />
+                Formations <br />
                 Professionnelles
               </p>
 
               <div className="border-cate"></div>
               <span className="titre_categories">VÉHICULES</span>
               <p>
-                Voitures Motos Caravaning Utilitaires Camions Nautisme
-                Équipement auto Équipement moto Équipement caravaning Équipement
-                nautisme
+                Voitures
+                <br />
+                Motos <br />
+                Caravaning
+                <br />
+                Utilitaires
+                <br />
+                Camions
+                <br />
+                Nautisme
+                <br />
+                Équipement auto
+                <br />
+                Équipement moto <br />
+                Équipement caravaning <br />
+                Équipement nautisme
+                <br />
               </p>
               <div className="border-cate"></div>
               <span className="titre_categories">IMMOBILIER</span>
               <p>
-                Ventes immobilières Immobilier Neuf Locations Colocations
-                Bureaux & Commerces
+                Ventes immobilières <br />
+                Immobilier Neuf <br />
+                Locations Colocations <br />
+                Bureaux & Commerces <br />
               </p>
             </div>
-          </div>
-          <div className="pe-3 col_footer">
-            <div>
-              <span className="titre_categories"> VACANCES </span>
-              <p>
-                Locations & Gîtes Chambres d'hôtes Campings Hébergements
-                insolites Hôtels Ventes privées vacances Locations en Espagne
-              </p>
-              <div className="border-cate"></div>
-              <span className="titre_categories">LOISIRS</span>
-              <p>
-                DVD - Films CD - Musique Livres Vélos Sports & Hobbies
-                Instruments de musique Collection Jeux & Jouets Vins &
-                Gastronomie
-              </p>
-              <div className="border-cate"></div>
-              <span className="titre_categories">ANIMAUX</span>
-              <p>Animaux</p>
-            </div>
-          </div>
+            {/* </div> */}
+          </Div_Col_footer>
+          {/* <div className="pe-3"> */}
+          <Div_Col_footer>
+            {/* <div> */}
+            <span className="titre_categories"> VACANCES </span>
+            <p>
+              Locations & Gîtes <br />
+              Chambres d'hôtes <br />
+              Campings Hébergements
+              <br />
+              Insolites <br />
+              Hôtels <br />
+              Ventes privées <br />
+              Locations en Espagne <br />
+            </p>
+            <div className="border-cate"></div>
+            <span className="titre_categories">LOISIRS</span>
+            <p>
+              DVD - Films <br />
+              CD - Musique <br />
+              Livres Vélos Sports & Hobbies <br />
+              Instruments de musique <br />
+              Collection Jeux & Jouets Vins & Gastronomie <br />
+            </p>
+            <div className="border-cate"></div>
+            <span className="titre_categories">ANIMAUX</span>
+            <p>Animaux</p>
+            {/* </div> */}
+            {/* </div> */}
+          </Div_Col_footer>
         </div>
         <div className="d-flex w-50 col_footer_wrap">
           {/* <div className="pe-3 col_footer"></div> */}
 
-          <div className="pe-3 col_footer">
+          {/* <div className="pe-3"> */}
+          <Div_Col_footer>
             <div>
               <span className="titre_categories">MODE</span>
               <p>
-                Vêtements Chaussures Accessoires & Bagagerie Montres & Bijoux
-                Équipement bébé Vêtements bébé Luxe et Tendance
+                Vêtements <br />
+                Chaussures <br />
+                Accessoires & Bagagerie <br />
+                Montres & Bijoux <br />
+                Équipement bébé <br />
+                Vêtements bébé <br />
+                Luxe et Tendance
               </p>
               <div className="border-cate"></div>
               <span className="titre_categories">MULTIMÉDIA</span>
@@ -106,33 +187,50 @@ export default function HautFooter() {
               <div className="border-cate"></div>
               <span className="titre_categories">SERVICES</span>
               <p>
-                Prestations de services Billetterie Évènements Cours
-                particuliers Covoiturage
+                Prestations de services <br />
+                Billetterie Évènements <br />
+                Cours particuliers
+                <br />
+                Covoiturage <br />
               </p>
             </div>
-          </div>
-          <div className="pe-3 col_footer">
+          </Div_Col_footer>
+          {/* </div> */}
+          {/* <div className="pe-3"> */}
+          <Div_Col_footer>
             <div>
               <span className="titre_categories">MAISON</span>
               <p>
-                Ameublement Électroménager Arts de la table Décoration Linge de
-                maison Bricolage Jardinage
+                Ameublement <br />
+                Électroménager <br />
+                Arts de la table <br />
+                Décoration <br />
+                Linge de maison <br />
+                Bricolage <br />
+                Jardinage
               </p>
               <div className="border-cate"></div>
               <span className="titre_categories"> MATÉRIEL PROFESSIONNEL</span>
               <p>
-                Matériel agricole Transport - Manutention BTP - Chantier
-                gros-oeuvre Outillage - Matériaux 2nd-oeuvre Équipements
-                industriels Restauration - Hôtellerie Fournitures de bureau
-                Commerces & Marchés Matériel médical
+                Matériel agricole <br />
+                Transport - Manutention <br />
+                BTP - Chantier gros-oeuvre <br />
+                Outillage - Matériaux 2nd-oeuvre <br />
+                Équipements industriels <br />
+                Restauration - Hôtellerie <br />
+                Fournitures de bureau <br />
+                Commerces & Marchés <br />
+                Matériel médical Matériel médical
               </p>
               <div className="border-cate"></div>
               <span className="titre_categories">DIVERS</span>
               <p>Autres</p>
             </div>
-          </div>
+          </Div_Col_footer>
         </div>
       </div>
+      {/* </div> */}
+      {/* // </div> */}
       <div className="border-cate"></div>
       <BasFooter />
     </div>

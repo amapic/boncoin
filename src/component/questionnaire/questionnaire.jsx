@@ -4,7 +4,6 @@ import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.css";
 
 import fleche_bas_1 from "../../img/bon_coin/fleche_bas_1.svg";
-import fleche_bas_2 from "../../img/bon_coin/fleche_bas_2.svg";
 import loupe from "../../img/bon_coin/loupe.svg";
 
 import { Modal, Overlay, FormCheck } from "react-bootstrap";
@@ -12,7 +11,8 @@ import { Modal, Overlay, FormCheck } from "react-bootstrap";
 import OverlayCate from "./../overlayCate";
 import Geo from "./recherche_geo";
 import plus from "../../img/bon_coin/plus.svg";
-
+import OffreDemande from "./offreDemande";
+import BarreRecherche from "./BarreRecherche";
 import Hh from "./boutonOrange";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
@@ -66,49 +66,7 @@ import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
 const BarreDefilement = () => {};
 
-const CateEtZoneSaisie = () => {
-  return (
-    <div
-      // style={{ width: "195px" }}
-      className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2"
-    >
-      <div className="CateZoneSaisie d-flex flex-row h-100 rounded bg-light mr-2">
-        <div
-          style={{ width: "195px" }}
-          className="text-truncate px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center"
-        >
-          <OverlayCate />
-          Catégories
-          <div className="flex-shrink-0">
-            <Image
-              className="flex-shrink-0"
-              width={16}
-              height={16}
-              src={fleche_bas_1}
-            />
-          </div>
-        </div>
-        <div className="pe-1"></div>
-        <div
-          style={{ width: "195px" }}
-          className="D d-flex flex-row border-left me-2 justify-content-left align-items-center"
-        >
-          <div className="p-1 flex-shrink-0">
-            <Image
-              className="flex-shrink-0"
-              width={16}
-              height={16}
-              src={loupe}
-            />
-          </div>
-          <div className="ms-3 text-secondary text-truncate">
-            Que recherchez-vous ?
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+
 
 // .B{
 //   width:45%;
@@ -176,44 +134,10 @@ const Questionnaire = () => {
       {/* style={{ width: "930px" }} */}
       <Hh />
       <div className="card_perso m-auto w-100">
-        <form>
-          <div className="d-flex flex-row w-25">
-            <label className="container d-flex flex-row">
-              <input name="contact" type="checkbox" />
-              <span className="checkmark"></span>
-              <span className="ps-3" style={{ fontSize: "13px" }}>
-                Offre
-              </span>
-            </label>
-
-            <label className="container d-flex flex-row align-items-center">
-              <input name="contact" type="checkbox" />
-              <span className="checkmark"></span>
-              <span className="ps-3" style={{ fontSize: "13px" }}>
-                Demande
-              </span>
-            </label>
-          </div>
-        </form>
+        <OffreDemande />
         {/* Partie Recherche */}
-        <div
-          style={{ height: "40px" }}
-          className="d-flex flex-row m-2 justify-content-between align-items-center"
-        >
-          <Geo />
-          <CateEtZoneSaisie />
+        <BarreRecherche />
 
-          <div style={{ width: "2%" }}></div>
-
-          {/* <div style={{ height: "40px" }} className="geo_droite"> */}
-          <Geo />
-          {/* </div> */}
-        </div>
-        <div className="d-flex">
-          <div className="d-md-none d-xl-none m-auto">
-            <Geo />
-          </div>
-        </div>
         <FormCheck type="switch">
           <FormCheck.Input isInvalid checked={swt} />
         </FormCheck>

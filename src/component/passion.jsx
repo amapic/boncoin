@@ -16,14 +16,14 @@ export default function Passion() {
           }}
           className="position-relative p-2"
         >
-          <div className="position-absolute float-right">
-            <img
-              style={{ bottom: "0px", right: "0px", minWidth: "545px" }}
-              id="img_communaute"
-              src="/img/communaute.png"
-              className=""
-            />
-          </div>
+          {/* <div className="position-absolute float-right"> */}
+          <img
+            style={{ bottom: "0px", right: "0px", minWidth: "545px" }}
+            id="img_communaute"
+            src="/img/communaute.png"
+            className="position-absolute float-right"
+          />
+          {/* </div> */}
           <div
             id="colonne_gauche_commu"
             style={{ height: "200px", maxWidth: "1100px" }}

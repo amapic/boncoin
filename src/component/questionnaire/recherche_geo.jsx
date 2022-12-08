@@ -28,6 +28,8 @@ export default function Geo()  {
     </div>
   );
 };
+
+
 const LogxfoTitre = styled.div`
   background: transparent;
   border-radius: 3px;
