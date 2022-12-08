@@ -3,7 +3,7 @@ import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import "bootstrap/dist/css/bootstrap.css";
 
-import styled from 'styled-components'
+import styled from "styled-components";
 import menu from "../../img/bon_coin/menu.svg";
 import fleche_bas_1 from "../../img/bon_coin/fleche_bas_1.svg";
 import fleche_bas_2 from "../../img/bon_coin/fleche_bas_2.svg";
@@ -12,23 +12,25 @@ import croix from "../../img/bon_coin/croix.svg";
 import Modal_window from "./../modal";
 import { Modal, Overlay } from "react-bootstrap";
 
-
-export default function Geo()  {
+export default function Geo() {
   return (
-    <div style={{ height: "40px" }} className="geo_droite">
     <div
-      style={{ width: "365px", heigth: "40px" }}
-      className="bg-primary d-flex flex-row w-100  rounded bg-light justify-content-between align-items-center"
+      style={{ width: "365px", height: "40px" }}
+      id="geo"
+      className="bg-light d-flex my-auto justify-content-between geo_droite position-relative align-items-center"
     >
-      <OverlayLoca />
-      <div className="pe-2 justify-content-center align-items-center">
-        <Image width={16} height={16} src={fleche_bas_2} />
+      <div
+        style={{ width: "140px", heigth: "38px" }}
+        className="position-relative bg-light d-flex flex-row w-100  rounded bg-light justify-content-between align-items-center"
+      >
+        <OverlayLoca />
+        <div className="pe-2 justify-content-center align-items-center">
+          <Image width={16} height={16} src={fleche_bas_2} />
+        </div>
       </div>
     </div>
-    </div>
   );
-};
-
+}
 
 const LogxfoTitre = styled.div`
   background: transparent;
@@ -39,11 +41,14 @@ const LogxfoTitre = styled.div`
   padding: 0.25em 1em;
 `;
 
-{/* <div style={{ height: "40px" }} className="geo_droite">
+{
+  /* <div style={{ height: "40px" }} className="geo_droite">
             <Geo />
-          </div> */}
+          </div> */
+}
 const OverlayLoca = (props) => {
   const [open, setOpen] = React.useState(false);
+  const [visible, setVisible] = React.useState("d-flex");
   const target = useRef(null);
   const router = useRouter();
 
@@ -55,13 +60,22 @@ const OverlayLoca = (props) => {
     console.log(open);
     setOpen(!open);
   };
+
+  const handleVisible = () => {
+    setVisible("d-none");
+  };
+
+  const handleOpen = () => {
+    // console.log(open);
+    setVisible("d-visible");
+  };
   return (
     <>
       {/* <span onClick={handleOpen} ref={target} className="pointer px-1">Toute la france</span> */}
       <div
         // style={{ width: "40%" }}
-        style={{ width: "150px", heigth: "20px" }}
-        className="ms-4 pointer h-100 d-flex flex-row bg-light align-items-center justify-content-between border rounded-pill text-center"
+        style={{ width: "150px", heigth: "36px" }}
+        className="ms-1  pointer h-100 {visible} flex-row bg-white align-items-center justify-content-between border rounded-pill text-center"
       >
         <span onClick={handleOpen} ref={target} className="align-middle px-2">
           Toute la france
@@ -72,6 +86,7 @@ const OverlayLoca = (props) => {
             width={16}
             height={16}
             className="flex-shrink-0 bg-light croix"
+            onClick={handleOpenCroix}
             src="/img/croix.svg"
           />
         </div>

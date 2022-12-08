@@ -8,6 +8,7 @@
 }
 .low_footer {
   display:block;
+  background-Color:rgb(71,71,71);
 }
 
 .card_perso {
@@ -117,8 +118,8 @@
   border-top:1px white;
   border-bottom:1px white;
   font-size: 13px;
-  padding:8px;
-  margin-top:24px;
+  padding:8px 0px;
+  // margin-top:24px;
 }
 //footer en gris foncé
 ///////////
@@ -137,8 +138,8 @@
 // }
 
 #footer{
-  // background-color: rgb(71,71,71);
-  margin:24px 8px;
+  background-color: rgb(71,71,71);
+  margin:0px 8px 24px 8px;
   color:white;
   font-size: 12px;
   padding:0 5px;
@@ -161,14 +162,15 @@
 //footer en gris clair
 .border-cate{
   border-top:1px solid #cad1d9;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
 
 
 .titre_categories{
   color:#1A1A1A;
-  padding-top: 8px;
+  padding-top: 4px;
+  padding-bottom: 2px;
   font-size: 12px;
 }
 .footer_categories{
@@ -176,7 +178,7 @@
 }
 .footer_categories p{
   color:#8191A0;
-  // padding-top: "8px";
+  // padding-bottom: "4px";
   font-size: 12px;
 }
 // .communaute>img{

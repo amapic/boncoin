@@ -11,74 +11,96 @@ function BasFooter() {
         <Div_Col_footer>
           <div>
             <span className="titre_categories">OUEST</span>
-            Basse-Normandie <br />
-            Bretagne <br />
-            Pays de la Loire <br />
-            Poitou-Charentes <br />
+            {/* <br /> */}
+            <p>
+              Basse-Normandie <br />
+              Bretagne <br />
+              Pays de la Loire <br />
+              Poitou-Charentes <br />
+            </p>
             <div className="border-cate"></div>
             <span className="titre_categories">SUD-OUEST</span>
-            Aquitaine Midi-Pyrénées <br />
+            <p>
+              <br />
+              Aquitaine Midi-Pyrénées <br />
+            </p>
           </div>
         </Div_Col_footer>
         <Div_Col_footer>
           <span className="titre_categories">SUD-EST</span>
-          Corse
-          <br />
-          Languedoc-Roussillon
-          <br />
-          Provence-Alpes-Côte d'Azur
-          <br />
-          Rhône-Alpes
-          <br />
+          <p>
+            {/* <br /> */}
+            Corse
+            <br />
+            Languedoc-Roussillon
+            <br />
+            Provence-Alpes-Côte d'Azur
+            <br />
+            Rhône-Alpes
+            <br />
+          </p>
           <div className="border-cate"></div>
           <span className="titre_categories">EST</span>
-          Alsace
-          <br />
-          Bourgogne
-          <br />
-          Champagne-Ardenne <br />
-          Franche-Comté <br />
-          Lorraine
-          <br />
+          <p>
+            {/* <br /> */}
+            Alsace
+            <br />
+            Bourgogne
+            <br />
+            Champagne-Ardenne <br />
+            Franche-Comté <br />
+            Lorraine
+            <br />
+          </p>
         </Div_Col_footer>
       </div>
       {/* </div> */}
       {/* // </div> */}
       <div className="d-flex w-50 col_footer_wrap">
         {/* <div> */}
-        <div className="pe-3 col_footer">
-          <Div_Col_footer>
-            <span className="titre_categories">NORD</span>
+        {/* <div className="pe-3 col_footer"> */}
+        <Div_Col_footer>
+          <span className="titre_categories">NORD</span>
+          <p>
+            {/* <br /> */}
             Haute-Normandie
             <br />
             Nord-Pas-de-Calais
             <br />
             Picardie
             <br />
-            <div className="border-cate"></div>
-            <span className="titre_categories">CENTRE</span>
+          </p>
+          <div className="border-cate"></div>
+          <span className="titre_categories">CENTRE</span>
+          <p>
+            <br />
             Auvergne
             <br />
             Centre Ile-de-France
             <br />
             Limousin
             <br />
-          </Div_Col_footer>
+          </p>
+        </Div_Col_footer>
+        {/* </div> */}
+        <Div_Col_footer>
+          {/* <div className="pe-3 col_footer"> */}
+          <span className="titre_categories">DROM</span>
+          <p>
+            {/* <p> */}
+            {/* <br /> */}
+            Guadeloupe
+            <br />
+            Martinique
+            <br />
+            Guyane
+            <br />
+            Réunion
+            <br />
+          </p>
           {/* </div> */}
-          <Div_Col_footer>
-            <div className="pe-3 col_footer">
-              <span className="titre_categories">DROM</span>
-              Guadeloupe
-              <br />
-              Martinique
-              <br />
-              Guyane
-              <br />
-              Réunion
-              <br />
-            </div>
-          </Div_Col_footer>
-        </div>
+        </Div_Col_footer>
+        {/* </div> */}
       </div>
     </div>
     // </div>
