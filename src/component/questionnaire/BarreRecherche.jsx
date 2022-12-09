@@ -84,12 +84,12 @@ export default function BarreRecherche() {
     <>
       <div
         // style={{ height: "40px" }}
-        className="d-flex flex-row m-2 justify-content-between align-items-center"
+        className="d-flex flex-row m-2 "
       >
         {/* <Geo /> */}
         <CateEtZoneSaisie />
 
-        <div style={{ width: "2%" }}></div>
+        {/* <div style={{ width: "2%" }}></div> */}
 
         {/* <div style={{ height: "40px" }} className="geo_droite"> */}
         <Grand>
@@ -98,9 +98,9 @@ export default function BarreRecherche() {
         {/* </div> */}
       </div>
       {/* <div className="d-flex"> */}
-      {/* <Grand>
+      <Petit>
         <Geo />
-      <Grand> */}
+      </Petit>
       {/* </div> */}
     </>
   );

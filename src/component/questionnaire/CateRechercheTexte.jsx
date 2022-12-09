@@ -7,30 +7,37 @@ import styled from "styled-components";
 const Grand = styled.div`
   @media (min-width: 768px) {
     display: flex;
+    margin: auto;
   }
   @media (max-width: 768px) {
     display: none;
+    margin: auto;
   }
 `;
 
 const Petit = styled.div`
   @media (min-width: 768px) {
     display: none;
+    margin: auto;
   }
   @media (max-width: 768px) {
     display: flex;
+    margin: auto;
   }
   @media (max-width: 525px) {
     display: none;
+    margin: auto;
   }
 `;
 
 const TresPetit = styled.div`
   @media (max-width: 525px) {
     display: flex;
+    margin: auto;
   }
   @media (min-width: 525px) {
     display: none;
+    margin: auto;
   }
 `;
 
@@ -86,9 +93,9 @@ export function CateGrandeLargeur() {
 
 export function CateMoyenneLargeur() {
   return (
-    <div className="d-flex flex-row h-100 rounded bg-light mr-2">
+    <div className="d-flex flex-row w-100 h-100 rounded bg-light mr-2">
       <div
-        style={{ width: "316px" }}
+        // style={{ width: "316px" }}
         className="px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center"
       >
         <OverlayCate />
@@ -96,16 +103,16 @@ export function CateMoyenneLargeur() {
         <div>
           {/* <Image width={16} height={16} src={fleche_bas_1} /> */}
           <img
-            style={{ width: "16px", height: "16px" }}
+            style={{ width: "30px", height: "16px" }}
             src="img/fleche_bas_1.svg"
-            className="flex-shrink-0"
+            className="flex-shrink-0 ps-1"
           />
         </div>
       </div>
-      <div style={{ width: "20px" }} className="bx-3"></div>
+      {/* <div style={{ width: "20px" }} className="bx-3"></div> */}
       <div
-        style={{ width: "320px" }}
-        className="border border-1 d-flex bg-white flex-row border-left me-2 justify-content-left align-items-center"
+        // style={{ width: "320px" }}
+        className="border border-1 d-flex bg-white flex-row border-left pe-2 justify-content-left align-items-center"
       >
         <div className="p-2">
           <Image width={16} height={16} src={loupe} className="flex-shrink-0" />
@@ -127,13 +134,13 @@ export function CatePetit() {
       >
         <div
           style={{ height: "40px" }}
-          className="w-100  px-3 d-flex m-auto flex-row rounded-right bg-light justify-content-between align-items-center"
+          className="w-100 me-1  px-3 d-flex m-auto flex-row rounded-right bg-light justify-content-between align-items-center"
         >
           <OverlayCate />
           Choisissez votre categorie
           <div>
             <img
-              style={{ width: "16px", height: "16px" }}
+              style={{ width: "30px", height: "16px" }}
               src="img/fleche_bas_1.svg"
               className="flex-shrink-0"
             />
