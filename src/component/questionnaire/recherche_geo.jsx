@@ -41,14 +41,9 @@ const LogxfoTitre = styled.div`
   padding: 0.25em 1em;
 `;
 
-{
-  /* <div style={{ height: "40px" }} className="geo_droite">
-            <Geo />
-          </div> */
-}
 const OverlayLoca = (props) => {
   const [open, setOpen] = React.useState(false);
-  const [visible, setVisible] = React.useState("d-flex");
+  const [visible, setVisible] = React.useState(true);
   const target = useRef(null);
   const router = useRouter();
 
@@ -61,13 +56,13 @@ const OverlayLoca = (props) => {
     setOpen(!open);
   };
 
-  const handleVisible = () => {
+  const handleVisible2 = () => {
     setVisible("d-none");
   };
 
-  const handleOpen = () => {
-    // console.log(open);
-    setVisible("d-visible");
+  const handleOpen2 = () => {
+    console.log(visible);
+    setVisible(!visible);
   };
   return (
     <>
@@ -75,7 +70,7 @@ const OverlayLoca = (props) => {
       <div
         // style={{ width: "40%" }}
         style={{ width: "150px", heigth: "36px" }}
-        className="ms-1  pointer h-100 {visible} flex-row bg-white align-items-center justify-content-between border rounded-pill text-center"
+        className="ms-1 {visible ? 'd-flex' : 'd-none'}   pointer h-100 d-flex flex-row bg-white align-items-center justify-content-between border rounded-pill text-center"
       >
         <span onClick={handleOpen} ref={target} className="align-middle px-2">
           Toute la france
@@ -86,7 +81,7 @@ const OverlayLoca = (props) => {
             width={16}
             height={16}
             className="flex-shrink-0 bg-light croix"
-            onClick={handleOpenCroix}
+            onClick={handleOpen2}
             src="/img/croix.svg"
           />
         </div>
