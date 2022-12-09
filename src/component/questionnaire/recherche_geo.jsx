@@ -69,18 +69,23 @@ const OverlayLoca = (props) => {
       {/* <span onClick={handleOpen} ref={target} className="pointer px-1">Toute la france</span> */}
       <div
         // style={{ width: "40%" }}
-        style={{ width: "150px", heigth: "36px" }}
+        style={{ width: "150px", height: "30px" }}
         className="ms-1 {visible ? 'd-flex' : 'd-none'}   pointer h-100 d-flex flex-row bg-white align-items-center justify-content-between border rounded-pill text-center"
       >
-        <span onClick={handleOpen} ref={target} className="align-middle px-2">
+        <span
+          style={{ height: "30px" }}
+          onClick={handleOpen}
+          ref={target}
+          className="align-middle px-2 pt-1"
+        >
           Toute la france
         </span>
 
-        <div className="ms-1">
+        <div className="bs-2 me-1">
           <img
             width={16}
             height={16}
-            className="flex-shrink-0 bg-light croix"
+            className="flex-shrink-0 bg-light croix bs-2"
             onClick={handleOpen2}
             src="/img/croix.svg"
           />

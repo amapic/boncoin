@@ -8,7 +8,7 @@ import loupe from "../../img/bon_coin/loupe.svg";
 
 import { Modal, Overlay, FormCheck } from "react-bootstrap";
 
-import OverlayCate from "./../overlayCate";
+// import OverlayCate from "./../overlayCate";
 import Geo from "./recherche_geo";
 import plus from "../../img/bon_coin/plus.svg";
 import OffreDemande from "./offreDemande";
@@ -65,8 +65,6 @@ import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 // }
 
 const BarreDefilement = () => {};
-
-
 
 // .B{
 //   width:45%;

@@ -1,4 +1,5 @@
 import Geo from "./recherche_geo";
+import CateEtZoneSaisie from "./CateRechercheTexte";
 // import Cate
 // const BarreDefilement = () => {};
 
@@ -45,8 +46,8 @@ export default function BarreRecherche() {
         style={{ height: "40px" }}
         className="d-flex flex-row m-2 justify-content-between align-items-center"
       >
-        <Geo />
-        {/* <CateEtZoneSaisie /> */}
+        {/* <Geo /> */}
+        <CateEtZoneSaisie />
 
         <div style={{ width: "2%" }}></div>
 
