@@ -1,11 +1,21 @@
 import Geo from "./recherche_geo";
 import CateEtZoneSaisie from "./CateRechercheTexte";
+import styled from "styled-components";
 // import Cate
 // const BarreDefilement = () => {};
 
 // .B{
 //   width:45%;
 // }
+
+// const TresPetit = styled.div`
+//   @media (max-width: 525px) {
+//     display: flex;
+//   }
+//   @media (min-width: 0px) {
+//     display: none;
+//   }
+// `;
 
 function BoutonOrange() {
   return (
@@ -39,11 +49,41 @@ function BoutonBleu() {
   );
 }
 
+const Grand = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const Petit = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  @media (max-width: 525px) {
+    display: none;
+  }
+`;
+
+const TresPetit = styled.div`
+  @media (max-width: 525px) {
+    display: flex;
+  }
+  @media (min-width: 0px) {
+    display: none;
+  }
+`;
+
 export default function BarreRecherche() {
   return (
     <>
       <div
-        style={{ height: "40px" }}
+        // style={{ height: "40px" }}
         className="d-flex flex-row m-2 justify-content-between align-items-center"
       >
         {/* <Geo /> */}
@@ -52,14 +92,16 @@ export default function BarreRecherche() {
         <div style={{ width: "2%" }}></div>
 
         {/* <div style={{ height: "40px" }} className="geo_droite"> */}
-        <Geo />
+        <Grand>
+          <Geo />
+        </Grand>
         {/* </div> */}
       </div>
-      <div className="d-flex">
-        <div className="d-md-none d-xl-none m-auto">
-          <Geo />
-        </div>
-      </div>
+      {/* <div className="d-flex"> */}
+      {/* <Grand>
+        <Geo />
+      <Grand> */}
+      {/* </div> */}
     </>
   );
 }

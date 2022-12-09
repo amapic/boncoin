@@ -17,53 +17,6 @@ import Hh from "./boutonOrange";
 
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 
-// function LeftArrow() {
-//   const { isFirstItemVisible, scrollPrev } =
-//     React.useContext(VisibilityContext);
-
-//   return (
-//     <Arrow disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
-//       Left
-//     </Arrow>
-//   );
-// }
-
-// function RightArrow() {
-//   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
-
-//   return (
-//     <Arrow disabled={isLastItemVisible} onClick={() => scrollNext()}>
-//       Right
-//     </Arrow>
-//   );
-// }
-
-// function App() {
-//   // const [items, setItems] = React.useState(getItems);
-//   const [selected, setSelected] = React.useState([]);
-//   const [position, setPosition] = React.useState(0);
-
-//   // const isItemSelected = (id) => !!selected.find((el) => el === id);
-
-//   const handleClick =
-//     (id) =>
-//     ({ getItemById, scrollToItem }) => {
-//       const itemSelected = isItemSelected(id);
-
-//       setSelected((currentSelected) =>
-//         itemSelected
-//           ? currentSelected.filter((el) => el !== id)
-//           : currentSelected.concat(id)
-//       );
-//     };
-
-//   return (
-//     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-//       <Questionnaire />
-//     </ScrollMenu>
-//   );
-// }
-
 const BarreDefilement = () => {};
 
 // .B{

@@ -14,6 +14,9 @@ const Grand = styled.div`
 `;
 
 const Petit = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
   @media (max-width: 768px) {
     display: flex;
   }
@@ -26,7 +29,7 @@ const TresPetit = styled.div`
   @media (max-width: 525px) {
     display: flex;
   }
-  @media (min-width: 0px) {
+  @media (min-width: 525px) {
     display: none;
   }
 `;
@@ -117,34 +120,46 @@ export function CateMoyenneLargeur() {
 
 export function CatePetit() {
   return (
-    <div className="d-flex flex-column h-100 rounded bg-light mr-2">
+    <>
       <div
-        style={{ width: "316px" }}
-        className="px-3 d-flex flex-row rounded-right bg-light justify-content-between align-items-center"
+        // style={{ width: "425px" }}
+        className="d-flex w-100 flex-column  rounded m-auto py-3"
       >
-        <OverlayCate />
-        Choisissez votre categorie
-        <div>
-          {/* <Image width={16} height={16} src={fleche_bas_1} /> */}
-          <img
-            style={{ width: "16px", height: "16px" }}
-            src="img/fleche_bas_1.svg"
-            className="flex-shrink-0"
-          />
+        <div
+          style={{ height: "40px" }}
+          className="w-100  px-3 d-flex m-auto flex-row rounded-right bg-light justify-content-between align-items-center"
+        >
+          <OverlayCate />
+          Choisissez votre categorie
+          <div>
+            <img
+              style={{ width: "16px", height: "16px" }}
+              src="img/fleche_bas_1.svg"
+              className="flex-shrink-0"
+            />
+          </div>
+        </div>
+        <div
+          style={{ height: "2px" }}
+          // className="w-100 border border-1 m-auto d-flex bg-white flex-row border-left me-2 justify-content-left align-items-center"
+        />
+        <div
+          style={{ height: "38px" }}
+          className="w-100 border border-1 m-auto d-flex bg-white flex-row border-left me-2 justify-content-left align-items-center"
+        >
+          <div className="p-2">
+            <Image
+              width={16}
+              height={16}
+              src={loupe}
+              className="flex-shrink-0"
+            />
+          </div>
+          <div className="ms-1 text-secondary flex-shrink-0">
+            Que recherchez-vous ?
+          </div>
         </div>
       </div>
-      <div style={{ width: "20px" }} className="bx-3"></div>
-      <div
-        style={{ width: "320px" }}
-        className="border border-1 d-flex bg-white flex-row border-left me-2 justify-content-left align-items-center"
-      >
-        <div className="p-2">
-          <Image width={16} height={16} src={loupe} className="flex-shrink-0" />
-        </div>
-        <div className="ms-1 text-secondary flex-shrink-0">
-          Que recherchez-vous ?
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
